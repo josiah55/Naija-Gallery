@@ -3226,7 +3226,7 @@
   }
    
   /* cards hover */
-  .card:hover {
+  .gallery-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
@@ -3256,7 +3256,7 @@
 
   /* Featured (blog) */
   .card .card-image {
-    width: 100px;
+    max-width: 100px;
   }
 
   /* Footer border on the blog */
