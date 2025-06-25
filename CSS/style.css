@@ -3264,4 +3264,85 @@
     border-top: 1px solid #515050; /* white border */
     padding: 20px;
   }
+  
+
+  /*Hero section for profile*/
+.hero-heading {
+    margin-top: 250px;
+  }
+  .container .col1 a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .col1 a {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+  }
+  
+  .col1 a:hover {
+    background: #d8dee4;
+  }
+  
+  .Hero {
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Images/1.jpg');
+    max-width: 100%;
+    text-align: center;
+    height: 100vh;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+  }
+
+  #Heading {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  .hero-heading .fw-bold {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+  }
+  
+  /*Profile about me image*/
+  .aboutme {
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  /* heire me (profile) */
+  .hireme-background {
+    background: #000;
+  }
+
  

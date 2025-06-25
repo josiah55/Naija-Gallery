@@ -21,25 +21,25 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto mt-3 mx-3">
+      <ul class="navbar-nav mx-auto text-center mt-3">
         <li class="nav-item">
-         <a class="nav-link text-light" href="/index.html">🏠 Home</a>
+         <a class="nav-link text-white-50 fw-normal fs-5" href="/index.html">🏠Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#contact-us">📞 Contact-Us</a>
+          <a class="nav-link text-white-50 fw-normal fs-5" href="#contact-us">📞Contact-Us</a>
         </li>
       </ul>
 
-      <form class="d-flex me-2" id="searchForm">
+      <form class="d-flex me-5" id="searchForm">
         <input class="form-control me-2" type="text" id="searchInput" placeholder="Search photos...">
         <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
 
-      <button class="btn btn-outline-light" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">🔐 Login/Signup</button>
+      <button class="btn btn-outline-light" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">🔐Login/Signup</button>
 
        <!-- custom hamburger icon -->
        <button class="btn btn-outline-light ms-2" id="customHamburger">
-        <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+        <i class="bi bi-list" style="font-size: 1.1rem;"></i>
       </button>
     </div>
   </div>
@@ -53,12 +53,22 @@
     <button class="btn-close btn-close-black" id="closePopup"></button>
   </div>
   <ul class="nav flex-column">
-    <li class="nav-item mb-2"><a class="nav-link text-black" href="/index.html">🧾 Templates</a></li>
-    <li class="nav-item mb-2"><a class="nav-link text-black" href="/Html/blog.html">📝 Blog</a></li>
-    <li class="nav-item mb-2"><a class="nav-link text-black" href="/Html/blog.html">👤 Profile</a></li>
+    <div class="dropdown">
+      <a class="nav-link text-black dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        🧾Templates
+      </a>
+      
+    
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/Html/templates.html">Business Starter Templates</a></li>
+        <li><a class="dropdown-item" href="/Html/templates1.html">Portfolio Templates</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <li class="nav-item"><a class="nav-link text-black" href="/Html/blog.html">📝Blog</a></li>
+    <li class="nav-item mb-2"><a class="nav-link text-black" href="/Html/profile.html">👤Profile</a></li>
   </ul>
 </div>
-
 
 <!--Hero sect-->
 <section class="position-relative overflow-hidden hero_video" style="height: 100vh;">
@@ -126,7 +136,7 @@
 <section class="container mt-5 pt-5">
   <div class="row">
     <div class="col-md-4 pt-5">
-      <form class="d-flex me-2 pt-5 mt-5">
+      <form class="d-flex me-2 pt-5">
         <input class="form-control me-2" type="search" placeholder="Search photos...">
         <button class="btn btn-outline-dark" type="submit">Search</button>
       </form>
@@ -284,7 +294,7 @@
   </div>
 </div>
 
-<!-- Celebrities Modal with Nested Names -->
+<!-- Comedians Modal with Nested Names -->
 <div class="modal fade" id="celebritiesModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
@@ -318,51 +328,51 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="/Images/Pastors/Dad-GO.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="/Images/Pastors/Dad-GO.jpg">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Dad-GO.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Daddy-GO..jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Daddy-GO..jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Daddy-Go.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Daddy-Go.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Daddy-GO2.webp" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Daddy-GO2.webp">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Daddy-GO1.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Daddy-GO1.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/PAPA-Adeboye-2.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/PAPA-Adeboye-2.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa-G.O.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa-G.O.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa-G.O4.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa-G.O4.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa-G.O1.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa-G.O1.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa GO2.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa GO2.jpg">Download</button>
           </div>
           <!-- Add more images dynamically here -->
@@ -384,52 +394,52 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-10.webp" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi-10.webp">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-2.jpeg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi-2.jpeg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-11.png" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi-11.png">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-5.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi-5.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-6.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi-6.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi-9.webp" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi-9.webp">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi4.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi4.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi3.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi3.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Papa Kumuyi2.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Papa Kumuyi2.jpg">Download</button>
           </div>
           <!-- Add more images dynamically here -->
@@ -451,52 +461,52 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris1.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris1.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris2.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris2.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris3.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris3.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris6.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris6.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris7.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris7.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris4.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris4.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris5.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris5.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris9.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris9.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="/Images/Pastors/Pastor Chris10.jpg" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris10.jpg">Download</button>
           </div>
           <!-- Add more images dynamically here -->
@@ -518,62 +528,62 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
@@ -595,32 +605,32 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
@@ -642,32 +652,32 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
@@ -689,30 +699,30 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Chris10.jpg">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
               data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected"
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <!-- Add more images dynamically here -->
         </div>
@@ -735,43 +745,43 @@
         <div class="row g-3">
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
           <div class="col-md-4">
             <img src="" class="img-fluid rounded">
-            <button class="btn btn-sm btn-outline-primary mt-2 w-100 protected" data-file="">Download</button>
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
           </div>
         </div>
       </div>
@@ -5494,24 +5504,24 @@
 
       <!-- About Section -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 fw-bold text-success">About Gallery</h5>
-        <p>Discover Africa through powerful imagery. From culture and nature to iconic    personalities, our gallery captures the vibrant spirit of the continent.</p>
+        <h5 class="text-uppercase mb-4 fw-bold text-success">About PhotoNaija</h5>
+        <p class="text-white-50">Discover Naija through powerful imagery. From culture and nature to iconic    personalities, our gallery captures the vibrant spirit of the continent.</p>
       </div>
 
       <!-- Quick Links -->
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 fw-bold text-success">Quick Links</h5>
-        <p><a href="#explore" class="text-white text-decoration-none">Explore</a></p>
-        <p><a href="#more-categories" class="text-white text-decoration-none">More Categories</a></p>
-        <p><a href="#about" class="text-white text-decoration-none">About Us</a></p>
+        <p><a href="#explore" class="text-white-50 text-decoration-none">Explore</a></p>
+        <p><a href="#more-categories" class="text-white-50 text-decoration-none">More Categories</a></p>
+        <p><a href="#about" class="text-white-50 text-decoration-none">About Us</a></p>
       </div>
 
       <!-- Contact -->
       <section id="contact-us" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 fw-bold text-success">Contact</h5>
-        <p><i class="bi bi-globe text-light"></i> Port Harcourt, Nigeria</p>
-        <p><i class="bi bi-envelope text-light"></i> support@africagallery.com</p>
-        <p><i class="bi bi-phone text-light"></i> +234 800 123 4567</p>
+        <p class="text-white-50"><i class="bi bi-globe text-light"></i> Port Harcourt, Nigeria</p>
+        <p class="text-white-50"><i class="bi bi-envelope text-light"></i> support@africagallery.com</p>
+        <p class="text-white-50"><i class="bi bi-phone text-light"></i> +234 800 123 4567</p>
       </section>
 
       <!-- Social Media -->
@@ -5525,9 +5535,10 @@
     </div>
 
     <!-- Copyright -->
+    <hr class="text-white fw-bold" />
     <div class="row mt-4">
       <div class="col-md-12 text-center">
-        <p class="text-white-50">Copyright © 2025 Lensi Africa Gallery. All rights reserved.</p>
+        <p class="text-white-50">Copyright © 2025 <i class="bi bi-camera">Naija</i>. All rights reserved.</p>
       </div>
     </div>
   </div>

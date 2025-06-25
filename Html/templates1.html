@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Template Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+<body>
+    <section>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold fs-2"></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-6">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold mx-3" href="/index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 mt-5">
+        <h1 class="mb-4 text-center pt-5">Portfolio Templates</h1>
+        <div class="row g-4">
+
+            <!-- Template Card 1 -->
+            <div class="col-md-4 pt-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/350x200.png?text=Business+Starter+1" class="card-img-top" alt="Portfolio Template" />
+                    <div class="card-body">
+                        <h5 class="card-title">Business Starter Templates</h5>
+                        <p class="card-text">A modern, responsive business starter template.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal1">Preview</button>
+                        <button class="btn btn-success" onclick="payWithPaystack('creative-portfolio')">Buy Now - ₦4000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 2 -->
+            <div class="col-md-4 pt-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/350x200.png?text=Portfolio+Template" class="card-img-top" alt="Portfolio Template" />
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Portfolio</h5>
+                        <p class="card-text">Clean and minimal portfolio design.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal2">Preview</button>
+                        <button class="btn btn-success" onclick="payWithPaystack('creative-portfolio')">Buy Now - ₦4500</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 3 -->
+            <div class="col-md-4 pt-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/350x200.png?text=Ecommerce+Template" class="card-img-top" alt="Portfolio Template" />
+                    <div class="card-body">
+                        <h5 class="card-title">Ecommerce Shop</h5>
+                        <p class="card-text">Fully responsive ecommerce website template.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal3">Preview</button>
+                        <button class="btn btn-success" onclick="payWithPaystack('creative-portfolio')">Buy Now - ₦5000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 4-->
+            <div class="col-md-4 pt-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/350x200.png?text=Business+Starter+1" class="card-img-top" alt="Portfolio Template" />
+                    <div class="card-body">
+                        <h5 class="card-title">Agency Landing Page</h5>
+                        <p class="card-text">A digital marketing agencies, startups, or freelancers template.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal4">Preview</button>
+                        <button class="btn btn-success" onclick="payWithPaystack('creative-portfolio')">Buy Now - ₦3500</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Template Card 5-->
+            <div class="col-md-4 pt-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/350x200.png?text=Business+Starter+1" class="card-img-top" alt="Portfolio Template" />
+                    <div class="card-body">
+                        <h5 class="card-title">Resume / CV Template</h5>
+                        <p class="card-text">Job Seekers and Freelancers Resume Template.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal5">Preview</button>
+                        <button class="btn btn-success" onclick="payWithPaystack('creative-portfolio')">Buy Now - ₦3000</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Template Card 6-->
+            <div class="col-md-4 pt-4">
+                <div class="card shadow-sm">
+                    <img src="https://via.placeholder.com/350x200.png?text=Business+Starter+1" class="card-img-top" alt="Portfolio Template" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Blog Template</h5>
+                        <p class="card-text">Writer / Developers Template.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#previewModal6">Preview</button>
+                        <button class="btn btn-success" onclick="payWithPaystack('creative-portfolio')">Buy Now - ₦4000</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Preview Modal 1 -->
+    <div class="modal fade" id="previewModal1" tabindex="-1" aria-labelledby="previewModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel1">Business Starter Website Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="/Html/creative_portfolio.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal 2 -->
+    <div class="modal fade" id="previewModal2" tabindex="-1" aria-labelledby="previewModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel2">Creative Portfolio Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="/Html/creative_portfolio.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal 3 -->
+    <div class="modal fade" id="previewModal3" tabindex="-1" aria-labelledby="previewModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel3">Ecommerce Shop Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="/Html/creative_portfolio.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal 4 -->
+    <div class="modal fade" id="previewModal4" tabindex="-1" aria-labelledby="previewModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel4">Agency Landing Page Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="/Html/creative_portfolio.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal 5 -->
+    <div class="modal fade" id="previewModal5" tabindex="-1" aria-labelledby="previewModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel5">Resume / CV Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="/Html/creative_portfolio.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal 6 -->
+    <div class="modal fade" id="previewModal6" tabindex="-1" aria-labelledby="previewModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel6">Tech Blog Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="/Html/creative_portfolio.html" style="width: 100%; height: 600px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Paystack Integration -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="/Script/templates.js"></script>
+</body>
+</html>

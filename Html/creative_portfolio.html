@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="text-center py-5 bg-dark text-white">
+      <h1 class="display-4">My Creative Portfolio</h1>
+      <p class="lead">Showcasing designs, photography, and frontend projects</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://source.unsplash.com/400x300/?design,creative"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Creative Design</h5>
+                <p class="card-text">
+                  A modern branding concept created using Figma and Adobe XD.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://source.unsplash.com/400x300/?photography,portfolio"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Photography</h5>
+                <p class="card-text">
+                  A minimalist portrait photo collection shot on location.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://source.unsplash.com/400x300/?web,frontend"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Frontend Website</h5>
+                <p class="card-text">
+                  Built a responsive web interface with HTML, CSS, and
+                  JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2>About Me</h2>
+        <p class="lead">
+          I’m a frontend developer and visual designer with a passion for
+          creativity and clean design.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <form class="w-75 mx-auto">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="text-center text-white bg-dark py-3">
+      <p class="mb-0">&copy; 2025 Creative Portfolio by You</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

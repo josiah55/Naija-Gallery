@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" id="top">
+      <div class="container" id="Josh">
+        <h1 class="navbar-brand fw-bold fs-2 text-black">
+          <i class="text-light"></i>
+        </h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-6 pt-2">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-normal active mx-2 text-light px-3 py-2"
+                href="/Html/profile.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-normal mx-2 text-light px-3 py-2"
+                href="/Html/project.html"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-normal mx-2 text-light px-3 py-2"
+                href="#contact_form"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-normal mx-2 text-light px-3 py-2"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold mx-2 text-light px-3 py-2"
+                href="/index.html"
+                ><i class="bi bi-camera text-white"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="Hero">
+      <div class="container pt-5 mt-5">
+        <div class="hero-heading">
+          <h1 class="my-3" id="Heading">
+            Hi, I'm <span class="name">Kadiri Josiah</span>
+          </h1>
+        </div>
+        <span>A Frontend Developer, Building Modern Websites And Blogs</span>
+        <div class="mt-4 col1">
+          <a class="py-2 px-3" href="/Html/hire_me.html">Hire Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- More About Me Section -->
+    <section class="about-me py-5" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img src="/Images/Jossy.jpg" alt="My photo" class="aboutme" />
+          </div>
+
+          <!-- Text Content -->
+          <div class="col-md-7">
+            <h2 class="section-title">More About Me</h2>
+            <p class="about-text">
+              Hello! I'm <strong>Kadiri Josiah</strong>, a passionate Frontend
+              Developer based in Port-Harcourt, Nigeria. I specialize in
+              crafting beautiful, responsive, and user-friendly websites using
+              <strong>HTML, CSS, JavaScript and Bootstrap.</strong>
+            </p>
+
+            <p class="about-text">
+              With 2 years of experience, I've built real-world projects
+              including a <strong>JS Calculator</strong>,
+              <strong>Real Estate Website</strong>,
+              <strong>Photo Gallery</strong>, and more — all of which you can
+              find on my GitHub account.
+            </p>
+
+            <p class="about-text">
+              I enjoy turning ideas into reality through clean code and design.
+              I'm constantly learning and aiming to make a positive impact
+              through my work in tech ❤️❤️❤️.
+            </p>
+
+            <a
+              href="/Html/Projects.html"
+              class="btn btn-outline-dark text-success mt-3 fw-bold"
+              >My Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5">
+      <div class="container mt-5">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold text-black fs-3">My Services</h1>
+          <p class="text-black fs-5 fst-italic">
+            Here are the core services I offer as a frontend developer.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow service-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-phone-landscape fs-1 mb-3"></i>
+                <h5 class="card-title fw-bold">Responsive Design</h5>
+                <p class="card-text text-muted">
+                  I create layouts that look and function well on any device,
+                  ensuring an optimal user experience across all screen sizes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow service-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-code-slash fs-1 mb-3"></i>
+                <h5 class="card-title fw-bold">Web Development</h5>
+                <p class="card-text text-muted">
+                  I build dynamic, interactive websites using HTML, CSS, and
+                  JavaScript, with a focus on performance and maintainability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow service-card h-100">
+              <div class="card-body text-center">
+                <i class="bi bi-palette fs-1 mb-3"></i>
+                <h5 class="card-title fw-bold">UI/UX Design</h5>
+                <p class="card-text text-muted">
+                  I work closely with designers to create intuitive, engaging,
+                  and visually appealing user interfaces that prioritize
+                  usability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 mt-5">
+      <div class="container pt-5">
+        <h2 class="text-center mb-4 fst-italic shadow">Testimonials</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <blockquote class="blockquote">
+              <p>
+                "Josiah built a landing page that brought our brand to life!"
+              </p>
+              <footer class="blockquote-footer">Joshua</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-3">
+            <blockquote class="blockquote">
+              <p>"Fast, responsive and clean code. Highly recommended!"</p>
+              <footer class="blockquote-footer">Susan</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-3">
+            <blockquote class="blockquote">
+              <p>"Fast, responsive and clean code. Highly recommended!"</p>
+              <footer class="blockquote-footer">Grace</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-3">
+            <blockquote class="blockquote">
+              <p>"Fast, responsive and clean code. Highly recommended!"</p>
+              <footer class="blockquote-footer">David</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-white pt-5 pb-4" id="contact_form">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <!-- Newsletter -->
+          <section class="py-5 text-center newsletter">
+            <div class="container mt-5">
+              <h2 class="text-black fw-bold fs-1">
+                Subscribe to My Newsletter
+              </h2>
+              <form
+                action="https://formspree.io/f/mldbvjwk"
+                method="POST"
+                class="row g-2 justify-content-center mt-3"
+              >
+                <div class="col-sm-2" id="input">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="col-md-1">
+                  <button type="submit" class="mybutton btn btn-outline-dark">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Brand Info -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-black">Jossy</h5>
+            <p class="text-muted">
+              Crafting clean and interactive web experiences with a focus on
+              performance and design.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-black">Quick Links</h5>
+            <p>
+              <a href="#about" class="text-muted text-decoration-none"
+                >About Me</a
+              >
+            </p>
+            <p>
+              <a
+                href="/Html/Projects.html"
+                class="text-muted text-decoration-none"
+                >Projects</a
+              >
+            </p>
+            <p>
+              <a
+                href="/Html/hire_me.html"
+                class="text-muted text-decoration-none"
+                >Hire Me</a
+              >
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h5 class="text-uppercase fw-bold text-black">Contact</h5>
+            <p class="text-black">
+              <i class="bi bi-envelope text-black"></i> hello@josh.dev
+            </p>
+            <section class="myform">
+              <div class="col-md-8 pt-4" id="myform">
+                <form action="https://formspree.io/f/xkgrvwrv" method="POST">
+                  <h3 class="mb-3 text-muted fs-6 fst-italic">
+                    Leave A Message
+                  </h3>
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-outline-dark px-5">
+                    Send
+                  </button>
+                </form>
+              </div>
+            </section>
+
+            <div class="d-flex mt-3" id="footer-icons">
+              <a href="#" class="me-3 fs-5"><i class="bi bi-github"></i></a>
+              <a href="#" class="me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="me-3 fs-5"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="fs-5"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="text-black fw-bold" />
+        <!-- Footer Bottom -->
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#top"><i class="bi bi-house text-black fs-1"></i></a>
+          </div>
+          <div class="col-md-6 mt-3">
+            <p class="text-muted fs-5 mb-0">
+              &copy; 2025 Jossy. All rights reserved❤️
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Script/script.js"></script>
+  </body>
+</html>
