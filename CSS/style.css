@@ -1,3348 +1,3338 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #fff;
-    overflow-x: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  /* navbar active */
-  #navbarNav .active {
-    color: #8818d7;
-  }
-  
-  #navbarNav a {
-    font-weight: bold;
-    color: #000;
-  }
-  
-  #navbarNav a:hover {
-    color: #8818d7;
-  }
-  
-  .nav-link:hover {
-    animation: bounce 0.3s ease;
-    text-decoration: underline;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-  
-    50% {
-      transform: translateY(-4px);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  
-  /* photonaija card */
-  .card-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .card-text {
-    font-size: 0.95rem;
-    color: #555;
-  }
-   
-  .card-body {
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
-  }
-  
-  
-  /* photonaija upload photo form*/
-  .gallery-card img {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .modal-dialog-scrollable .modal-body {
-    max-height: 400px;
-    overflow-y: auto;
-  }
-  
-  .generalmodal {
-    width: 100px;
-  }
-  
-  #uploadForm {
-    max-width: 100%;
-    justify-items: center;
-  }
-  
-  /* photonaija logo*/
-  #photo-naija a:hover {
-    text-decoration: none;
-  }
-  
-  
-  /*modal for login in photonaija*/
-  .modal-dialog {
-    margin-top: 90px;
-  }
-  
-  /*Hero section for photonaija*/
-  .hero_video {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .hero_video video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .hero_video::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-  }
-  
-  .hero_text {
-    position: absolute;
-    z-index: 3;
-    color: white;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  /*Explore Categories Section*/
-  .Pastor {
-    width: 100px;
-    border-radius: 5px;
-  }
-  
-  /*Afrovista*/
-  .card .card-img-top {
-    max-width: 500px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* navbar active */
+#navbarNav .active {
+  color: #8818d7;
+}
+
+#navbarNav a {
+  font-weight: bold;
+  color: #000;
+}
+
+#navbarNav a:hover {
+  color: #8818d7;
+}
+
+.nav-link:hover {
+  animation: bounce 0.3s ease;
+  text-decoration: underline;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
 
-  .container a {
-    color: #fff;
-    text-decoration: none;
+  50% {
+    transform: translateY(-4px);
   }
-    
-    
-  .gallery-item img {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-    transition: transform 0.3s ease;
+
+  100% {
+    transform: translateY(0);
   }
-  .gallery-item img:hover {
-    transform: scale(1.03);
-  }
-  
-  
-  /*Cards Gallery Featured Photos download buttons*/
+}
+
+/* photonaija card */
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+/* photonaija upload photo form*/
+.gallery-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.modal-dialog-scrollable .modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.generalmodal {
+  width: 100px;
+}
+
+#uploadForm {
+  max-width: 100%;
+  justify-items: center;
+}
+
+/* photonaija logo*/
+#photo-naija a:hover {
+  text-decoration: none;
+}
+
+/*modal for login in photonaija*/
+.modal-dialog {
+  margin-top: 90px;
+}
+
+/*Hero section for photonaija*/
+.hero_video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero_video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero_video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.hero_text {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Explore Categories Section*/
+.Pastor {
+  width: 100px;
+  border-radius: 5px;
+}
+
+/*Afrovista*/
+.card .card-img-top {
+  max-width: 500px;
+}
+
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.gallery-item img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+/*Cards Gallery Featured Photos download buttons*/
+.my-gallery-card {
+  position: absolute;
+  bottom: 20px;
+  left: 200px;
+}
+
+.my-gallery-card5 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+}
+
+.my-gallery-card6 {
+  position: absolute;
+  top: 115px;
+  left: 195px;
+}
+
+.my-gallery-card8 {
+  position: absolute;
+  top: 159px;
+  left: 200px;
+}
+
+.my-gallery-card9 {
+  position: absolute;
+  top: 115px;
+  left: 200px;
+}
+
+.my-gallery-card11 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+}
+
+.my-gallery-card12 {
+  position: absolute;
+  top: 109px;
+  left: 200px;
+}
+
+.my-gallery-card14 {
+  position: absolute;
+  top: 169px;
+  left: 200px;
+}
+
+.my-gallery-card15 {
+  position: absolute;
+  top: 115px;
+  left: 200px;
+}
+
+#my-imgcard16 {
+  position: absolute;
+  top: 540px;
+  left: 200px;
+}
+
+#my-imgcard17 {
+  position: absolute;
+  top: 445px;
+  left: 200px;
+}
+
+#my-imgcard18 {
+  position: absolute;
+  top: 537px;
+  left: 200px;
+}
+
+#my-imgcard19 {
+  position: absolute;
+  top: 555px;
+  left: 200px;
+}
+
+.my-gallery-card20 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.my-gallery-card21 {
+  position: absolute;
+  top: 540px;
+  left: 200px;
+}
+
+#my-imgcard22 {
+  position: absolute;
+  top: 194px;
+  left: 200px;
+}
+
+.my-gallery-card23 {
+  position: absolute;
+  top: 82px;
+  left: 200px;
+}
+
+.my-gallery-card24 {
+  position: absolute;
+  top: 179px;
+  left: 200px;
+}
+
+#my-imgcard25 {
+  position: absolute;
+  top: 540px;
+  left: 200px;
+}
+
+.my-gallery-card26 {
+  position: absolute;
+  top: 432px;
+  left: 200px;
+}
+
+.my-gallery-card27 {
+  position: absolute;
+  top: 455px;
+  left: 200px;
+}
+
+#my-imgcard28 {
+  position: absolute;
+  top: 149px;
+  left: 200px;
+}
+
+.my-gallery-card29 {
+  position: absolute;
+  top: 434px;
+  left: 200px;
+}
+
+.my-gallery-card30 {
+  position: absolute;
+  top: 389px;
+  left: 200px;
+}
+
+/* media querries for the download button */
+@media (min-width: 344px) and (max-width: 375px) {
   .my-gallery-card {
     position: absolute;
-    bottom: 20px;
-    left: 200px;
+    top: 120px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 138px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 148px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 160px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 161px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 240px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 55px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 105px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card {
+    position: absolute;
+    top: 190px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 150px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 162px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 174px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 185px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 193px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 280px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 70px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 128px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard1 {
+    position: absolute;
+    top: 221px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) and (max-width: 375px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 120px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 140px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 148px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 155px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 165px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 240px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 38px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card5 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-gallery-card5 {
     position: absolute;
     top: 160px;
-    left: 200px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 344px) and (max-width: 375px) {
   .my-gallery-card6 {
     position: absolute;
-    top: 115px;
-    left: 195px;
+    top: 90px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 103px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 112px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 120px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 126px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 190px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 15px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 48px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card6 {
+    position: absolute;
+    top: 120px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 390px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 418px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 442px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 460px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 475px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 683px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 230px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 350px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard7 {
+    position: absolute;
+    top: 538px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card8 {
     position: absolute;
-    top: 159px;
-    left: 200px;
+    top: 128px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 140px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 149px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 160px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 165px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 245px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 38px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 85px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card8 {
+    position: absolute;
+    top: 162px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 120px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 135px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 146px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 160px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 240px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 15px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card9 {
+    position: absolute;
+    top: 48px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-gallery-card9 {
     position: absolute;
     top: 115px;
-    left: 200px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 344px) and (max-width: 375px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 390px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 418px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 440px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 460px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 475px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 660px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 232px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 350px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard10 {
+    position: absolute;
+    top: 537px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card11 {
     position: absolute;
-    top: 160px;
-    left: 200px;
+    top: 390px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 416px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 440px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 460px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 475px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 660px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 35px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 85px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card11 {
+    position: absolute;
+    top: 163px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card12 {
     position: absolute;
-    top: 109px;
-    left: 200px;
+    top: 388px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 412px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 436px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 455px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 470px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 655px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 10px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 40px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card12 {
+    position: absolute;
+    top: 112px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 124px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 360px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 140px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 150px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 160px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 168px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 245px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 52px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 105px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard13 {
+    position: absolute;
+    top: 195px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card14 {
     position: absolute;
-    top: 169px;
-    left: 200px;
+    top: 392px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 420px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 444px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 465px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 480px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 663px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 37px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card14 {
+    position: absolute;
+    top: 170px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card15 {
     position: absolute;
-    top: 115px;
-    left: 200px;
+    top: 390px;
+    left: auto;
+    right: 50%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 418px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 442px;
+    left: auto;
+    right: 50%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 460px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 480px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 540px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 662px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 15px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 45px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card15 {
+    position: absolute;
+    top: 120px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   #my-imgcard16 {
     position: absolute;
-    top: 540px;
-    left: 200px;
+    top: 390px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 418px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 442px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 462px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 481px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 498px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 232px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 354px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard16 {
+    position: absolute;
+    top: 538px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   #my-imgcard17 {
     position: absolute;
-    top: 445px;
-    left: 200px;
+    top: 318px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 342px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 362px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 380px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 395px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 411px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 185px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 286px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard17 {
+    position: absolute;
+    top: 447px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 390px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 360px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 418px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 440px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 461px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 482px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 498px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 232px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard18 {
+    position: absolute;
+    top: 348px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
   #my-imgcard18 {
     position: absolute;
     top: 537px;
-    left: 200px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 344px) {
   #my-imgcard19 {
     position: absolute;
-    top: 555px;
-    left: 200px;
+    top: 400px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 431px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 457px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 475px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 498px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 510px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 235px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 357px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard19 {
+    position: absolute;
+    top: 556px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 127px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 139px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 150px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 157px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 160px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 173px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 7px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card20 {
+    position: absolute;
+    top: 41px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-gallery-card20 {
     position: absolute;
     top: 100px;
-    left: 200px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 344px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 393px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 420px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 443px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 465px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 482px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 500px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 236px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card21 {
+    position: absolute;
+    top: 354px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-gallery-card21 {
     position: absolute;
     top: 540px;
-    left: 200px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 344px) {
   #my-imgcard22 {
     position: absolute;
-    top: 194px;
-    left: 200px;
+    top: 128px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 140px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 152px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 160px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 176px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 58px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 109px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard22 {
+    position: absolute;
+    top: 193px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card23 {
     position: absolute;
-    top: 82px;
-    left: 200px;
+    top: 387px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 417px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 440px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 460px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 478px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 495px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: -2px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 20px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card23 {
+    position: absolute;
+    top: 80px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card24 {
     position: absolute;
-    top: 179px;
-    left: 200px;
+    top: 127px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 140px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 152px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 160px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 163px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 176px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 50px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 100px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card24 {
+    position: absolute;
+    top: 177px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 392px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 360px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 419px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 443px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 463px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 485px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 500px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 235px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard25 {
+    position: absolute;
+    top: 352px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
   #my-imgcard25 {
     position: absolute;
     top: 540px;
-    left: 200px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 344px) {
   .my-gallery-card26 {
     position: absolute;
-    top: 432px;
-    left: 200px;
+    top: 393px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 420px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 446px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 465px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 488px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 500px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 180px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 275px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card26 {
+    position: absolute;
+    top: 435px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card27 {
     position: absolute;
-    top: 455px;
-    left: 200px;
+    top: 337px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 360px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 385px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 400px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 420px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 436px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 192px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 295px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card27 {
+    position: absolute;
+    top: 453px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   #my-imgcard28 {
     position: absolute;
-    top: 149px;
-    left: 200px;
+    top: 97px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 106px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 115px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 122px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 135px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 35px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 78px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #my-imgcard28 {
+    position: absolute;
+    top: 151px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card29 {
     position: absolute;
-    top: 434px;
-    left: 200px;
+    top: 392px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 418px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 443px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 464px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 485px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 500px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 185px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 283px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card29 {
+    position: absolute;
+    top: 435px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 344px) {
   .my-gallery-card30 {
     position: absolute;
-    top: 389px;
-    left: 200px;
-  }
-  
-  /* media querries for the download button */
-  @media (min-width: 344px) and (max-width: 375px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 120px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 138px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 148px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 160px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 161px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 240px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 55px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 105px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card {
-      position: absolute;
-      top: 190px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 150px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 162px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 174px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 185px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 193px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 280px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 70px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 128px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard1 {
-      position: absolute;
-      top: 221px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) and (max-width: 375px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 120px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 140px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 148px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 155px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 165px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 240px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 38px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 80px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card5 {
-      position: absolute;
-      top: 160px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) and (max-width: 375px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 90px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 103px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 112px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 120px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 126px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 190px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 15px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 48px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card6 {
-      position: absolute;
-      top: 120px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 390px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 418px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 442px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 460px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 475px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 683px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 230px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 350px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard7 {
-      position: absolute;
-      top: 538px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 128px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 140px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 149px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 160px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 165px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 245px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 38px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 85px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card8 {
-      position: absolute;
-      top: 162px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 120px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 135px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 146px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 150px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 160px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 240px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 15px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 48px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card9 {
-      position: absolute;
-      top: 115px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) and (max-width: 375px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 390px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 418px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 440px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 460px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 475px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 660px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 232px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 350px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard10 {
-      position: absolute;
-      top: 537px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 390px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 416px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 440px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 460px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 475px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 660px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 35px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 85px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card11 {
-      position: absolute;
-      top: 163px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 388px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 412px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 436px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 455px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 470px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 655px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 10px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 40px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card12 {
-      position: absolute;
-      top: 112px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 124px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 140px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 150px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 160px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 168px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 245px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 52px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 105px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard13 {
-      position: absolute;
-      top: 195px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 392px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 420px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 444px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 465px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 480px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 663px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 37px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 80px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card14 {
-      position: absolute;
-      top: 170px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 390px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 418px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 442px;
-      left: auto;
-      right: 50%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 460px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 400px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 480px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 540px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 662px;
-      right: 50%;
-      left: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 15px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 45px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card15 {
-      position: absolute;
-      top: 120px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 390px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 418px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 442px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 462px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 481px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 498px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 232px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 354px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard16 {
-      position: absolute;
-      top: 538px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 318px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 342px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 362px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 380px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 395px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 411px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 185px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 286px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard17 {
-      position: absolute;
-      top: 447px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 390px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 418px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 440px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 461px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 482px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 498px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 232px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 348px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard18 {
-      position: absolute;
-      top: 537px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 400px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 431px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 457px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 475px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 498px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 510px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 235px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 357px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard19 {
-      position: absolute;
-      top: 556px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 127px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 139px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 150px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 157px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 160px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 173px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 7px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 41px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card20 {
-      position: absolute;
-      top: 100px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 393px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 420px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 443px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 465px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 482px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 500px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 236px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 354px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card21 {
-      position: absolute;
-      top: 540px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 128px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 140px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 152px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 160px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 176px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 58px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 109px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard22 {
-      position: absolute;
-      top: 193px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 387px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 417px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 440px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 460px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 478px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 495px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: -2px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 20px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card23 {
-      position: absolute;
-      top: 80px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 127px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 140px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 152px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 160px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 163px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 176px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 50px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 100px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card24 {
-      position: absolute;
-      top: 177px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 392px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 419px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 443px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 463px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 485px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 500px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 235px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 352px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard25 {
-      position: absolute;
-      top: 540px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 393px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 420px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 446px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 465px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 488px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 500px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 180px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 275px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card26 {
-      position: absolute;
-      top: 435px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 337px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 360px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 385px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 400px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 420px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 436px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 192px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 295px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card27 {
-      position: absolute;
-      top: 453px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 97px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 106px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 115px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 122px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 135px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 35px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 78px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    #my-imgcard28 {
-      position: absolute;
-      top: 151px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 392px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 418px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 443px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 464px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 485px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 500px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 185px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 283px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card29 {
-      position: absolute;
-      top: 435px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 340px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 360px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 364px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 375px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 386px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 390px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 400px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 412px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 420px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 414px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 430px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 161px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 252px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-gallery-card30 {
-      position: absolute;
-      top: 388px;
-      right: auto;
-      left: 20%;
-    }
-  }
-  
-  
-  /*Cards Gallery Featured Photos*/
-  .my-img-top {
+    top: 340px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 360px) {
+  .my-gallery-card30 {
     position: absolute;
-    top: -30px;
+    top: 364px;
+    right: auto;
+    left: 20%;
   }
-  
+}
+
+@media (min-width: 375px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 386px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 390px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 400px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 412px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 420px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 414px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 430px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 161px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 252px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-gallery-card30 {
+    position: absolute;
+    top: 388px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+/*Cards Gallery Featured Photos*/
+.my-img-top {
+  position: absolute;
+  top: -30px;
+}
+
+.my-img-top5 {
+  position: absolute;
+  top: -30px;
+}
+
+.my-img-top6 {
+  position: absolute;
+  top: -30px;
+}
+
+.my-img-top8 {
+  position: absolute;
+  top: -32px;
+}
+
+.my-img-top9 {
+  position: absolute;
+  top: -72px;
+}
+
+.my-img-top11 {
+  position: absolute;
+  top: -375px;
+}
+
+.my-img-top12 {
+  position: absolute;
+  top: -420px;
+}
+
+.my-img-top14 {
+  position: absolute;
+  top: -373px;
+}
+
+.my-img-top15 {
+  position: absolute;
+  top: -420px;
+}
+
+.my-img-top20 {
+  position: absolute;
+  top: -95px;
+}
+
+.my-img-top22 {
+  position: relative;
+  top: -50px;
+}
+
+.my-img-top23 {
+  position: absolute;
+  top: -512px;
+}
+
+.my-img-top24 {
+  position: absolute;
+  top: -70px;
+}
+
+.my-img-top25 {
+  position: relative;
+  top: -50px;
+}
+
+.my-img-top26 {
+  position: absolute;
+  top: -165px;
+}
+
+.my-img-top27 {
+  position: absolute;
+  top: -67px;
+}
+
+.my-img-top28 {
+  position: static;
+  margin-top: -50px;
+}
+
+.my-img-top29 {
+  position: static;
+  margin-top: -159px;
+}
+
+.my-img-top30 {
+  position: absolute;
+  margin-top: -135px;
+}
+
+/*media querry for featured images*/
+@media (min-width: 344px) {
+  .my-img-top5 {
+    position: static;
+    top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top5 {
+    position: absolute;
+    top: -15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top5 {
+    position: absolute;
+    top: -22px;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-img-top5 {
     position: absolute;
     top: -30px;
   }
-  
+}
+
+@media (min-width: 344px) {
+  .my-img-top6 {
+    position: static;
+    top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top6 {
+    position: absolute;
+    top: -15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top6 {
+    position: absolute;
+    top: -20px;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-img-top6 {
     position: absolute;
     top: -30px;
   }
-  
+}
+
+@media (min-width: 344px) {
+  .my-img-top7 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top8 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .my-img-top8 {
     position: absolute;
-    top: -32px;
+    top: -15px;
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .my-img-top8 {
+    position: absolute;
+    top: -20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top8 {
+    position: absolute;
+    top: -30px;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top9 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top9 {
+    position: absolute;
+    top: -35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top9 {
+    position: absolute;
+    top: -49px;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-img-top9 {
     position: absolute;
     top: -72px;
   }
-  
+}
+
+@media (min-width: 344px) {
+  .my-img-top10 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top11 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top11 {
+    position: absolute;
+    top: -193px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top11 {
+    position: absolute;
+    top: -265px;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-img-top11 {
     position: absolute;
     top: -375px;
   }
-  
+}
+
+@media (min-width: 344px) {
+  .my-img-top12 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .my-img-top12 {
     position: absolute;
-    top: -420px;
+    top: -212px;
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .my-img-top12 {
+    position: absolute;
+    top: -295px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top12 {
+    position: absolute;
+    top: -422px;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top13 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top14 {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .my-img-top14 {
     position: absolute;
-    top: -373px;
+    top: -192px;
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .my-img-top14 {
+    position: absolute;
+    top: -262px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top14 {
+    position: absolute;
+    top: -375px;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top15 {
+    position: static;
+    top: -90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top15 {
+    position: absolute;
+    top: -210px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top15 {
+    position: absolute;
+    top: -290px;
+  }
+}
+
+@media (min-width: 1025px) {
   .my-img-top15 {
     position: absolute;
     top: -420px;
   }
-  
+}
+
+@media (min-width: 344px) {
   .my-img-top20 {
-    position: absolute;
-    top: -95px;
+    position: static;
+    margin-top: 0px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top20 {
+    position: static;
+    margin-top: -49px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top20 {
+    position: static;
+    margin-top: -66px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top20 {
+    position: static;
+    margin-top: -92px;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top21 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top21 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top22 {
-    position: relative;
-    top: -50px;
+    position: static;
+    margin-top: 2px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top22 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top22 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top22 {
+    position: static;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top23 {
-    position: absolute;
-    top: -512px;
+    position: static;
+    margin-top: 0px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top23 {
+    position: static;
+    margin-top: -238px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top23 {
+    position: static;
+    margin-top: -326px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top23 {
+    position: static;
+    margin-top: -455px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top24 {
-    position: absolute;
-    top: -70px;
+    position: static;
+    margin-top: 2px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top24 {
+    position: static;
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top24 {
+    position: static;
+    margin-top: -14px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top25 {
-    position: relative;
-    top:-50px;
+    position: static;
+    margin-top: 2px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top25 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top25 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top26 {
-    position: absolute;
-    top: -165px;
+    position: static;
+    margin-top: 0px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top26 {
+    position: static;
+    margin-top: -58px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top26 {
+    position: static;
+    margin-top: -79px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top26 {
+    position: static;
+    margin-top: -108px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top27 {
-    position: absolute;
-    top: -67px;
+    position: static;
+    margin-top: 2px;
   }
-  
+}
+
+@media (min-width: 768px) {
+  .my-img-top27 {
+    position: static;
+    margin-top: -2px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top27 {
+    position: static;
+    margin-top: -13px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top28 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top28 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top28 {
+    position: static;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top28 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 344px) {
+  .my-img-top29 {
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top29 {
     position: static;
     margin-top: -50px;
   }
-  
+}
+
+@media (min-width: 1024px) {
   .my-img-top29 {
     position: static;
-    margin-top: -159px;
+    margin-top: -68px;
   }
-  
+}
+
+@media (min-width: 1025px) {
+  .my-img-top29 {
+    position: static;
+    margin-top: -102px;
+  }
+}
+
+@media (min-width: 344px) {
   .my-img-top30 {
-    position: absolute;
-    margin-top: -135px;
-  }
-  
-  
-  
-  /*media querry for featured images*/
-  @media (min-width: 344px) {
-    .my-img-top5 {
-      position: static;
-      top: 0px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top5 {
-      position: absolute;
-      top: -15px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top5 {
-      position: absolute;
-      top: -22px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top5 {
-      position: absolute;
-      top: -30px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top6 {
-      position: static;
-      top: 0px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top6 {
-      position: absolute;
-      top: -15px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top6 {
-      position: absolute;
-      top: -20px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top6 {
-      position: absolute;
-      top: -30px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top7 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top8 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top8 {
-      position: absolute;
-      top: -15px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top8 {
-      position: absolute;
-      top: -20px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top8 {
-      position: absolute;
-      top: -30px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top9 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top9 {
-      position: absolute;
-      top: -35px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top9 {
-      position: absolute;
-      top: -49px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top9 {
-      position: absolute;
-      top: -72px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top10 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top11 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top11 {
-      position: absolute;
-      top: -193px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top11 {
-      position: absolute;
-      top: -265px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top11 {
-      position: absolute;
-      top: -375px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top12 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top12 {
-      position: absolute;
-      top: -212px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top12 {
-      position: absolute;
-      top: -295px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top12 {
-      position: absolute;
-      top: -422px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top13 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top14 {
-      position: static;
-      top: 0;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top14 {
-      position: absolute;
-      top: -192px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top14 {
-      position: absolute;
-      top: -262px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top14 {
-      position: absolute;
-      top: -375px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top15 {
-      position: static;
-      top: -90px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top15 {
-      position: absolute;
-      top: -210px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top15 {
-      position: absolute;
-      top: -290px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top15 {
-      position: absolute;
-      top: -420px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top20 {
-      position: static;
-      margin-top: 0px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top20 {
-      position: static;
-      margin-top: -49px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top20 {
-      position: static;
-      margin-top: -66px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top20 {
-      position: static;
-      margin-top: -92px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top21 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top21 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top22 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top22 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top22 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top22 {
-      position: static;
-      margin-top: 3px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top23 {
-      position: static;
-      margin-top: 0px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top23 {
-      position: static;
-      margin-top: -238px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top23 {
-      position: static;
-      margin-top: -326px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top23 {
-      position: static;
-      margin-top: -455px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top24 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top24 {
-      position: static;
-      margin-top: -5px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top24 {
-      position: static;
-      margin-top: -14px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top25 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top25 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top25 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top26 {
-      position: static;
-      margin-top: 0px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top26 {
-      position: static;
-      margin-top: -58px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top26 {
-      position: static;
-      margin-top: -79px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top26 {
-      position: static;
-      margin-top: -108px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top27 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top27 {
-      position: static;
-      margin-top: -2px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top27 {
-      position: static;
-      margin-top: -13px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top28 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top28 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top28 {
-      position: static;
-      margin-top: 5px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top28 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top29 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top29 {
-      position: static;
-      margin-top: -50px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top29 {
-      position: static;
-      margin-top: -68px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top29 {
-      position: static;
-      margin-top: -102px;
-    }
-  }
-  
-  @media (min-width: 344px) {
-    .my-img-top30 {
-      position: static;
-      margin-top: 2px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .my-img-top30 {
-      position: static;
-      margin-top: -34px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .my-img-top30 {
-      position: static;
-      margin-top: -45px;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .my-img-top30 {
-      position: static;
-      margin-top: -82px;
-    }
-  }
-  
-  /*  Previous and Next Buttons  */
+    position: static;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-img-top30 {
+    position: static;
+    margin-top: -34px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-img-top30 {
+    position: static;
+    margin-top: -45px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .my-img-top30 {
+    position: static;
+    margin-top: -82px;
+  }
+}
+
+/*  Previous and Next Buttons  */
+.my-buttons {
+  margin-top: 50vh;
+}
+
+@media (min-width: 768px) {
   .my-buttons {
-    margin-top: 50vh;
+    margin-top: 0;
   }
-  
-  @media (min-width: 768px) {
-    .my-buttons {
-      margin-top: 0;
-    }
-  }
-  
-  /*the large img when clicked on the card img*/
-  .img-fluid {
-    width: 600px;
-  }
-  
-  /* More Categories*/
-  .ICON {
-    width: 30px;
-  }
-  
-  /* photo upload */
-  .uploaded-photo {
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: cover;
-    margin: 10px;
-    position: relative;
-  }
-  
-  .photo-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    padding: 4px;
-  }
-  
-  /*back to top photonaija*/
-  #backToTop {
-    font-size: 25px;
-  }
-  
-  /*Border*/
-  h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid #1a3d7c;
-    padding-bottom: 0.3rem;
-  }
-   
-  /* cards hover */
-  .gallery-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
-  
-  /* footer for photonaija */
-  #footer-icons .bi-github {
-    color: #181717;
-  }
-  
-  #footer-icons .bi-linkedin {
-    color: #0A66C2;
-  }
-  
-  #footer-icons .bi-facebook {
-    color: #1877F2;
-  }
-  
-  #footer-icons .bi-twitter {
-    color: #1DA1F2;
-  }
-  
-  /* naija blog */
-  .hero h1 {
-    font-size: 50px;
-    font-weight: bolder;
-  }
+}
 
-  /* Featured (blog) */
-  .card .card-image {
-    max-width: 100px;
-  }
+/*the large img when clicked on the card img*/
+.img-fluid {
+  width: 600px;
+}
 
-  /* Footer border on the blog */
-  .footer-bordered {
-    border-top: 1px solid #515050; /* white border */
-    padding: 20px;
-  }
-  
+/* More Categories*/
+.ICON {
+  width: 30px;
+}
 
-  /*Hero section for profile*/
+/* photo upload */
+.uploaded-photo {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  position: relative;
+}
+
+.photo-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px;
+}
+
+/*back to top photonaija*/
+#backToTop {
+  font-size: 25px;
+}
+
+/*Border*/
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #1a3d7c;
+  padding-bottom: 0.3rem;
+}
+
+/* cards hover */
+.gallery-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* footer for photonaija */
+#footer-icons .bi-github {
+  color: #181717;
+}
+
+#footer-icons .bi-linkedin {
+  color: #0a66c2;
+}
+
+#footer-icons .bi-facebook {
+  color: #1877f2;
+}
+
+#footer-icons .bi-twitter {
+  color: #1da1f2;
+}
+
+/* naija blog */
+.hero h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+/* Featured (blog) */
+.card .card-image {
+  max-width: 100px;
+}
+
+/* Footer border on the blog */
+.footer-bordered {
+  border-top: 1px solid #515050; /* white border */
+  padding: 20px;
+}
+
+/*Hero section for profile*/
 .hero-heading {
-    margin-top: 250px;
-  }
-  .container .col1 a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .col1 a {
-    background: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: 0.5s ease-out;
-  }
-  
-  .col1 a:hover {
-    background: #d8dee4;
-  }
-  
-  .Hero {
-    position: relative;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Images/1.jpg');
-    max-width: 100%;
-    text-align: center;
-    height: 100vh;
-    color: #fff;
-    flex-direction: column;
-    display: flex;
-  }
+  margin-top: 250px;
+}
+.container .col1 a {
+  text-decoration: none;
+  color: #000;
+}
 
-  #Heading {
-    font-size: 50px;
-    font-weight: 800;
-  }
-  
-  .hero-heading .fw-bold {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 0em;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 50%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: black;
-    }
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-    transition: all 0.3s;
-  }
-  
-  /*Profile about me image*/
-  .aboutme {
-    width: 300px;
-    border-radius: 50%;
-  }
+.col1 a {
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.5s ease-out;
+}
 
-  /* heire me (profile) */
-  .hireme-background {
-    background: #000;
-  }
+.col1 a:hover {
+  background: #d8dee4;
+}
 
- 
+.Hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Images/1.jpg");
+  max-width: 100%;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+}
+
+#Heading {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.hero-heading .fw-bold {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0em;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/*Profile about me image*/
+.aboutme {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* heire me (profile) */
+.hireme-background {
+  background: #000;
+}
