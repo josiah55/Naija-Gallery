@@ -170,7 +170,7 @@ body {
   border-radius: 5px;
 }
 
-/*Afrovista*/
+/*photonaijavista*/
 .card .card-img-top {
   max-width: 500px;
 }
@@ -3311,6 +3311,12 @@ h2 {
 .hero-heading {
   margin-top: 250px;
 }
+
+@media (max-width: 767.98px) {
+  .hero-heading {
+    margin-top: 50px;
+  }
+}
 .container .col1 a {
   text-decoration: none;
   color: #000;
@@ -3339,9 +3345,30 @@ h2 {
   display: flex;
 }
 
+@media (max-width: 767.98px) {
+  .Hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/Images/1.jpg");
+    max-width: 100%;
+    text-align: center;
+    height: 60vh;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
 #Heading {
   font-size: 50px;
   font-weight: 800;
+}
+
+@media (max-width: 767.98px) {
+  #Heading {
+    font-size: 30px;
+    font-weight: 800;
+  }
 }
 
 .hero-heading .fw-bold {
@@ -3371,18 +3398,66 @@ h2 {
   }
 }
 
+/*profile image*/
+.aboutme {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .aboutme {
+    max-width: 200px;
+    margin-top: 40px;
+  }
+}
+
+/*services*/
 .service-card:hover {
   transform: scale(1.05);
   transition: all 0.3s;
 }
 
-/*Profile about me image*/
-.aboutme {
-  width: 300px;
-  border-radius: 50%;
+@media (max-width: 767.98px) {
+  #services {
+    margin-top: -50px;
+  }
+}
+
+/*Testimonials*/
+@media (max-width: 767.98px) {
+  #testimonials {
+    margin-top: -100px;
+  }
+}
+
+/*profile contact*/
+@media (max-width: 767.98px) {
+  #contact_form {
+    margin-top: -100px;
+  }
+}
+
+/*templates*/
+@media (max-width: 767.98px) {
+  #template {
+    margin-top: -40px;
+  }
+}
+
+/*blog*/
+@media (max-width: 767.98px) {
+  #blog_ {
+    margin-top: -70px;
+  }
 }
 
 /* heire me (profile) */
 .hireme-background {
   background: #000;
+}
+
+@media (max-width: 767.98px) {
+  .my-footer {
+    margin-top: -30px;
+  }
 }
