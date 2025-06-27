@@ -71,7 +71,7 @@
 </div>
 
 <!--Hero sect-->
-<section class="position-relative overflow-hidden hero_video" style="height: 100vh;">
+<section class="position-relative overflow-hidden hero_video">
   <!-- Background Video -->
   <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover"><source src="/Videos/hero video1.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -80,8 +80,8 @@
   <!-- Overlay Content -->
   <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center hero_text">
     <h1 class="display-4 fw-bold text-white pt-3">Discover Africa Through Photos</h1>
-    <p class="lead text-primary text-white fs-2 fw-bold">Explore culture, beauty, and stories of Africa captured in stunning visuals.</p>
-    <a href="#explore" class="btn btn-success text-light btn-lg mt-3 fw-bold">Explore Categories</a>
+    <p class="lead text-primary text-white fw-normal fs-3">Explore culture, beauty, and stories of Africa captured in stunning visuals.</p>
+    <a href="#explore" class="btn btn-success text-light btn-sm py-2 mt-1 fs-6">Explore Categories</a>
   </div>
 </section>
 
@@ -135,7 +135,7 @@
 
 <!--Photonaijavista-->
 <section class="container mt-5 pt-5">
-  <div class="row">
+  <div class="row" id="photonaijavista">
     <div class="col-md-4 pt-5">
       <form class="d-flex me-2 pt-5">
         <input class="form-control me-2" type="text" id="searchInput" placeholder="Search photos...">
@@ -156,7 +156,7 @@
       </div>
     </div>
     <div class="col-md-5 mt-5 pt-5">
-    <div class="dropdown">      <!--Dropdown-->
+    <div class="dropdown" id="drop-down">      <!--Dropdown-->
       <button type="button" class="btn btn-success bg-black fst-italic dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-camera text-success fw-bold"></i><span class="text-success fw-bold">Naija</span></button>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item text-black" href="/Html/my-africa.html"></a></li>
@@ -167,7 +167,8 @@
 </section>
 
 <!-- Explore Section -->
-<section class="container my-5 pt-5" id="explore">
+<section id="explore">
+  <div class="container my-5 pt-5">
   <h2 class="mb-4 text-center pt-5 fs-1 fw-bold">Explore Categories</h2>
   <div class="d-flex flex-wrap justify-content-center gap-3">
     <section id="pastors"></section>
@@ -177,6 +178,7 @@
     <button class="btn btn-light text-success" id="business" data-bs-toggle="modal" data-bs-target="#businessModal">Business Moguls</button>
     <button class="btn btn-success" id="culture" data-bs-toggle="modal" data-bs-target="#traditionModal">Culture & Tradition</button>
     <button class="btn btn-light text-success" id="comedians" data-bs-toggle="modal" data-bs-target="#celebritiesModal">Comedians</button>
+  </div>
   </div>
 </section>
 
@@ -2068,10 +2070,12 @@
       </div>
     </div>
     <div class="text-center pt-5 mt-5">
+      <div id="my-buttons">                        <!--Previous and Next buttons-->
       <button id="prevBtn" class="btn btn-success me-2" type="button" data-bs-target="#groupCarousel" data-bs-slide="prev">‹ Previous
       </button>
       <button id="nextBtn" class="btn btn-success" type="button" data-bs-target="#groupCarousel" data-bs-slide="next">Next ›
       </button>
+      </div>
     </div>
   </div>
 </div>
@@ -5473,6 +5477,7 @@
   
 <!--upload your photo-->
 <section class="container pt-5 my-5 my_container">
+  <div id="my_container">
   <h2 class="text-center pt-5 mt-5 mb-4 fs-1 fw-bold">Got Amazing Photos of Africa?
     <p class="fs-5 text-muted">Join our community of photographers and share the beauty of the continent with the world.</p>
   </h2>
@@ -5494,6 +5499,7 @@
   <div id="previewContainer" class="mt-5">
     <h5 class="text-white bg-success p-2 fs-5 fst-italic">Uploaded Photos:</h5>
     <div id="photoGallery" class="d-flex flex-wrap"></div>
+  </div>
   </div>
 </section>
 

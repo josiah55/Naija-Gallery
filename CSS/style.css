@@ -90,11 +90,18 @@ body {
   margin-top: 90px;
 }
 
-/*Hero section for photonaija*/
+/* Hero section for photonaija */
 .hero_video {
   position: relative;
   height: 100vh;
   overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .hero_video {
+    position: relative;
+    height: 60vh;
+  }
 }
 
 .hero_video video {
@@ -127,7 +134,37 @@ body {
   transform: translateY(-50%);
 }
 
+@media (max-width: 767.98px) {
+  .hero_text h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+/*about photonaija*/
+@media (max-width: 767.98px) {
+  #about {
+    margin-top: -50px;
+  }
+}
+
+/*photonaijavista*/
+@media (max-width: 767.98px) {
+  #photonaijavista {
+    margin-top: -100px;
+  }
+
+  #drop-down {
+    margin-top: -70px;
+  }
+}
+
 /*Explore Categories Section*/
+@media (max-width: 767.98px) {
+  #explore {
+    margin-top: -100px;
+  }
+}
 .Pastor {
   width: 100px;
   border-radius: 5px;
@@ -3164,13 +3201,20 @@ body {
 }
 
 /*  Previous and Next Buttons  */
-.my-buttons {
-  margin-top: 50vh;
+#my-buttons {
+  margin-top: -5vh;
 }
 
-@media (min-width: 768px) {
-  .my-buttons {
-    margin-top: 0;
+@media (max-width: 767.98px) {
+  #my-buttons {
+    margin-top: -10vh;
+  }
+}
+
+/*more categories*/
+@media (max-width: 767.98px) {
+  #more-categories {
+    margin-top: -70px;
   }
 }
 
@@ -3203,6 +3247,12 @@ body {
   text-align: center;
   font-size: 14px;
   padding: 4px;
+}
+
+@media (max-width: 767.98px) {
+  #my_container {
+    margin-top: -100px;
+  }
 }
 
 /*back to top photonaija*/
