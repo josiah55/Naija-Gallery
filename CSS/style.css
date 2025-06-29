@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -583,9 +584,21 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  #Apostle-Selman4 {
+    margin-top: -14px;
+  }
+}
+
 @media (min-width: 768px) {
   #Apostle-Selman5 {
     margin-top: -45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman5 {
+    margin-top: -88px;
   }
 }
 
@@ -595,9 +608,21 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  #Apostle-Selman7 {
+    margin-top: -107px;
+  }
+}
+
 @media (min-width: 768px) {
   #Apostle-Selman8 {
     margin-top: -112px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman8 {
+    margin-top: -202px;
   }
 }
 
@@ -607,9 +632,21 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  #Apostle-Selman10 {
+    margin-top: -193px;
+  }
+}
+
 @media (min-width: 768px) {
   #Apostle-Selman11 {
     margin-top: -157px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman11 {
+    margin-top: -277px;
   }
 }
 
@@ -619,9 +656,21 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  #Apostle-Selman13 {
+    margin-top: -273px;
+  }
+}
+
 @media (min-width: 768px) {
   #Apostle-Selman14 {
     margin-top: -153px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman14 {
+    margin-top: -269px;
   }
 }
 
@@ -631,9 +680,105 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  #Apostle-Selman16 {
+    margin-top: -243px;
+  }
+}
+
 @media (min-width: 768px) {
   #Apostle-Selman17 {
-    margin-top: 300px;
+    margin-top: -109px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman17 {
+    margin-top: -196px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman19 {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman19 {
+    margin-top: -96px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman20 {
+    margin-top: -41px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman20 {
+    margin-top: -82px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman22 {
+    margin-top: -98px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman22 {
+    margin-top: -178px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman23 {
+    margin-top: -102px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman23 {
+    margin-top: -189px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman25 {
+    margin-top: -207px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman25 {
+    margin-top: -365px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman26 {
+    margin-top: -212px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman26 {
+    margin-top: -378px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Apostle-Selman28 {
+    margin-top: -229px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Apostle-Selman28 {
+    margin-top: -405px;
   }
 }
 
