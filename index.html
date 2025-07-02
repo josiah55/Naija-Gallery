@@ -72,7 +72,6 @@
 
 <!--Hero sect-->
 <section class="position-relative overflow-hidden hero_video">
-  <!-- Background Video -->
   <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover"><source src="/Videos/hero video1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -81,7 +80,7 @@
   <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-white text-center hero_text">
     <h1 class="display-4 fw-bold text-white pt-3">Discover Africa Through Photos</h1>
     <p class="lead text-primary text-white fw-normal fs-3">Explore culture, beauty, and stories of Africa captured in stunning visuals.</p>
-    <a href="#explore" class="btn btn-success text-light btn-sm py-2 mt-1 fs-6">Explore Categories</a>
+    <a href="#explore" class="btn btn-light text-success btn-sm py-2 mt-1 fs-5">Explore Categories</a>
   </div>
 </section>
 
@@ -157,34 +156,35 @@
     </div>
     <div class="col-md-4 mt-5 pt-5">
     <div class="dropdown" id="drop-down">      <!--Dropdown-->
-      <button type="button" class="btn btn-success bg-black fst-italic dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-camera text-success fw-bold"></i><span class="text-success fw-bold">Naija</span></button>
+      <button type="button" class="btn btn-light text-success fst-italic dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-camera text-success"></i><span class="text-success">Naija</span></button>
       <ul class="dropdown-menu">
-        <li class="px-3">Thank you for choosing photonaija</li>
+        <li class="px-3 drop-down">Thank you for choosing photonaija</li>
       </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Explore Section -->
+<!-- Explore Categories Section -->
 <section id="explore">
   <div class="container my-5 pt-5">
   <h2 class="mb-4 text-center pt-5 fs-1 fw-bold">Explore Categories</h2>
-  <div class="d-flex flex-wrap justify-content-center gap-3">
-    <section id="pastors"></section>
-    <button class="btn btn-success" id="pastors" data-bs-toggle="modal" data-bs-target="#categoryModal">Pastors</button>
-    <button class="btn btn-light text-success" id="musicians" data-bs-toggle="modal" data-bs-target="#musicianModal">Musicians</button>
-    <button class="btn btn-success" id="nature" data-bs-toggle="modal" data-bs-target="#natureModal">Nature & Wildlife</button>
-    <button class="btn btn-light text-success" id="business" data-bs-toggle="modal" data-bs-target="#businessModal">Business Moguls</button>
-    <button class="btn btn-success" id="culture" data-bs-toggle="modal" data-bs-target="#traditionModal">Culture & Tradition</button>
-    <button class="btn btn-light text-success" id="comedians" data-bs-toggle="modal" data-bs-target="#celebritiesModal">Comedians</button>
+  <div class="d-flex flex-wrap justify-content-center gap-3 align-items-center">
+    <button class="btn btn-light text-success px-3 py-3" id="pastors" data-bs-toggle="modal" data-bs-target="#pastorsModal">Pastors</button>
+    <button class="btn btn-light text-success px-3 py-3" id="musicians" data-bs-toggle="modal" data-bs-target="#musicianModal">Musicians</button>
+    <button class="btn btn-light text-success px-3 py-3" id="nature" data-bs-toggle="modal" data-bs-target="#natureModal">Nature & Wildlife</button>
+    <button class="btn btn-light text-success px-3 py-3" id="business" data-bs-toggle="modal" data-bs-target="#businessModal">Business Moguls</button>
+    <button class="btn btn-light text-success px-3 py-3" id="culture" data-bs-toggle="modal" data-bs-target="#traditionModal">Culture & Tradition</button>
+    <button class="btn btn-light text-success px-3 py-3" id="comedians" data-bs-toggle="modal" data-bs-target="#comediansModal">Comedians</button>
+    <button class="btn btn-light text-success px-3 py-3" id="people" data-bs-toggle="modal" data-bs-target="#peoplesModal">People</button>
+    <button class="btn btn-light text-success px-3 py-3" id="icons" data-bs-toggle="modal" data-bs-target="#iconsModal">Icons</button>
   </div>
   </div>
 </section>
 
 
 <!-- Pastors Modal with Nested Names -->
-<div class="modal fade" id="categoryModal" tabindex="-1">
+<div class="modal fade" id="pastorsModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -228,9 +228,10 @@
       </div>
       <div class="modal-body">
         <ul class="list-group">
-          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal" data-bs-dismiss="modal">Musician A</a></li>
-          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
-          data-bs-dismiss="modal">Musician B</a></li>
+          <li class="list-group-item"><div><img src="" alt="" class="Pastor"></div><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#WizPhotosModal" data-bs-dismiss="modal">Ayo Balogun (Big-Wiz)</a></li>
+
+          <li class="list-group-item"><div><img src="" alt="" class="Pastor"></div><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#DavidoPhotosModal"
+          data-bs-dismiss="modal">David Adeleke (Davido)</a></li>
         </ul>
       </div>
     </div>
@@ -298,7 +299,7 @@
 </div>
 
 <!-- Comedians Modal with Nested Names -->
-<div class="modal fade" id="celebritiesModal" tabindex="-1">
+<div class="modal fade" id="comediansModal" tabindex="-1">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -311,6 +312,46 @@
           data-bs-dismiss="modal">Comedians A</a></li>
           <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#musicianPhotosModal"
           data-bs-dismiss="modal">Comedians B</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- People's Modal with Nested Names -->
+<div class="modal fade" id="peoplesModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="/Images/3.jpg" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#peoplesPhotosModal"
+          data-bs-dismiss="modal">Woman</a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#peoplesPhotosModal"
+          data-bs-dismiss="modal">Man</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Icons Modal with Nested Names -->
+<div class="modal fade" id="iconsModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><img src="/Images/3.jpg" alt="" class="generalmodal"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#iconsPhotosModal"
+          data-bs-dismiss="modal"></a></li>
+          <li class="list-group-item"><a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#iconsPhotosModal"
+          data-bs-dismiss="modal"></a></li>
         </ul>
       </div>
     </div>
@@ -925,11 +966,11 @@
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected"
             data-file="/Images/Pastors/Pastor Jerry Eze2.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry4">
             <img src="/Images/Pastors/Pastor Jerry Eze3.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze3.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry5">
             <img src="/Images/Pastors/Pastor Jerry Eze4.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze4.jpg">Download</button>
           </div>
@@ -937,67 +978,67 @@
             <img src="/Images/Pastors/Pastor Jerry Eze5.webp" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze5.webp">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry7">
             <img src="/Images/Pastors/Pastor Jerry Eze6.webp" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze6.webp">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry8">
             <img src="/Images/Pastors/Pastor Jerry Eze7.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze7.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry9">
             <img src="/Images/Pastors/Pastor Jerry Eze8.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze8.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry10">
             <img src="/Images/Pastors/Pastor Jerry Eze10.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze10.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry11">
             <img src="/Images/Pastors/Pastor Jerry Eze11.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze11.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry12">
             <img src="/Images/Pastors/Pastor Jerry Eze12.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze12.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry13">
             <img src="/Images/Pastors/Pastor Jerry Eze13.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze13.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry14">
             <img src="/Images/Pastors/Pastor Jerry Eze14.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze14.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry15">
             <img src="/Images/Pastors/Pastor Jerry Eze15.webp" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze15.webp">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry16">
             <img src="/Images/Pastors/Pastor Jerry Eze16.png" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze16.png">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry17">
             <img src="/Images/Pastors/Pastor Jerry Eze17.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze17.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry18">
             <img src="/Images/Pastors/Pastor Jerry Eze18.jpeg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze18.jpeg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry19">
             <img src="/Images/Pastors/Pastor Jerry Eze19.webp" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze19.webp">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry20">
             <img src="/Images/Pastors/Pastor Jerry Eze20.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze20.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry21">
             <img src="/Images/Pastors/Pastor Jerry Eze21.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze21.jpg">Download</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" id="Pastor-Jerry22">
             <img src="/Images/Pastors/Pastor Jerry Eze22.jpg" class="img-fluid rounded">
             <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="/Images/Pastors/Pastor Jerry Eze22.jpg">Download</button>
           </div>
@@ -1010,12 +1051,68 @@
 
 
 
-<!-- Nested Modal for Musician Photos -->
-<div class="modal fade" id="musicianPhotosModal" tabindex="-1">
+<!-- Nested Modal for Big Wiz -->
+<div class="modal fade" id="WizPhotosModal" tabindex="-1">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Photos of Selected Musician</h5>
+        <h5 class="modal-title">Ayo Balogun (Big-Wiz)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+          <div class="col-md-4">
+            <img src="" class="img-fluid rounded">
+            <button class="btn btn-sm btn-outline-success mt-2 w-100 protected" data-file="">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Nested Modal for Musician Photos -->
+<div class="modal fade" id="DavidoPhotosModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">David Adeleke (Davido)</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
@@ -1081,8 +1178,8 @@
               <img src="/Images/featured photo1.jpg" class="card-img-top my-img-top1" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal1">
               <div class="my-gallery-card" id="my-imgcard1">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/featured photo1.jpg"><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file="/Images/featured photo1.jpg"><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1102,8 +1199,8 @@
               <img src="/Images/featured photo2.jpg" class="card-img-top my-img-top2" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal2">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file="/Images/featured photo2.jpg"><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file="/Images/featured photo2.jpg"><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1123,8 +1220,8 @@
               <img src="/Images/featured photo3.jpg" class="card-img-top my-img-top3" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal3">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Mother</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1143,8 +1240,8 @@
             <div class="card border-0">
               <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal" data-bs-target="#imageModal4">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1163,8 +1260,8 @@
             <div class="card border-0">
               <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal" data-bs-target="#imageModal5">
               <div class="my-gallery-card5">
-                <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1184,8 +1281,8 @@
               <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal6">
               <div class="my-gallery-card6">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1205,8 +1302,8 @@
               <img src="/Images/feature photo7.jpg" class="card-img-top7 my-img-top7" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal7">
               <div class="my-gallery-card" id="my-imgcard7">
-                <h5 class="card-title text-white">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1226,8 +1323,8 @@
               <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal8">
               <div class="my-gallery-card8">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1247,8 +1344,8 @@
               <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal9">
               <div class="my-gallery-card9">
-                <h5 class="card-title text-white fw-bold">Animals</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1268,8 +1365,8 @@
               <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal10">
               <div class="my-gallery-card" id="my-imgcard10">
-                <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1289,8 +1386,8 @@
               <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal11">
               <div class="my-gallery-card11">
-                <h5 class="card-title text-white fw-bold">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1310,8 +1407,8 @@
               <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal12">
               <div class="my-gallery-card12">
-                <h5 class="card-title text-white">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1331,8 +1428,8 @@
               <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal13">
               <div class="my-gallery-card" id="my-imgcard13">
-                <h5 class="card-title text-white">Woman</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1352,8 +1449,8 @@
               <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal14">
               <div class="my-gallery-card14">
-                <h5 class="card-title text-white">Mother</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1373,8 +1470,8 @@
               <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal15">
               <div class="my-gallery-card15">
-                <h5 class="card-title text-white">Tradition</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1398,8 +1495,8 @@
             <div class="card border-0">
               <img src="/Images/Child Lensi Africa.jpg" class="card-img-top my-img-top16" alt="" data-bs-toggle="modal" data-bs-target="#imageModal16">
               <div class="my-gallery-card" id="my-imgcard16">
-                <h5 class="card-title text-white fw-bold">Child</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1418,8 +1515,8 @@
             <div class="card border-0">
               <img src="/Images/Children Lensi Africa.jpg" class="card-img-top my-img-card17" alt="" data-bs-toggle="modal" data-bs-target="#imageModal17">
               <div class="my-gallery-card" id="my-imgcard17">
-                <h5 class="card-title text-white fw-bold">Boy</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1439,8 +1536,8 @@
               <img src="/Images/Horse Lensi Africa.jpg" class="card-img-top my-img-top18" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal18">
               <div class="my-gallery-card" id="my-imgcard18">
-                <h5 class="card-title text-white fw-bold">Horse</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1460,8 +1557,8 @@
               <img src="/Images/Image Lensi Africa.jpg" class="card-img-top my-img-top19" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal19">
               <div class="my-gallery-card" id="my-imgcard19">
-                <h5 class="card-title text-white fw-bold">Calf</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1481,8 +1578,8 @@
               <img src="/Images/Kids Lensi Africa.jpg" class="card-img-top my-img-top20" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal20">
               <div class="my-gallery-card20">
-                <h5 class="card-title text-white fw-bold">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1502,8 +1599,8 @@
               <img src="/Images/Land Lensi Africa.jpg" class="card-img-top my-img-top21" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal21">
               <div class="my-gallery-card21">
-                <h5 class="card-title text-white fw-bold">Land</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1523,8 +1620,8 @@
               <img src="/Images/Lion Lensi Africa.jpg" class="card-img-top7 my-img-top22" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal22">
               <div class="my-gallery-card" id="my-imgcard22">
-                <h5 class="card-title text-white">Lion</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1544,8 +1641,8 @@
               <img src="/Images/Lion-Lioness Lensi Africa.jpg" class="card-img-top my-img-top23" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal23">
               <div class="my-gallery-card23">
-                <h5 class="card-title text-white fw-bold">Lion/Lioness</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1565,8 +1662,8 @@
               <img src="/Images/Masqurade Lensi Africa.jpg" class="card-img-top my-img-top24" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal24">
               <div class="my-gallery-card24">
-                <h5 class="card-title text-white fw-bold">Culture</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1586,8 +1683,8 @@
               <img src="/Images/Monkey Lensi Africa.jpg" class="card-img-top my-img-top25" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal25">
               <div class="my-gallery-card" id="my-imgcard25">
-                <h5 class="card-title text-white fw-bold">Monkey</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1607,8 +1704,8 @@
               <img src="/Images/Ostrich Lensi Africa.jpg" class="card-img-top my-img-top26" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal26">
               <div class="my-gallery-card26">
-                <h5 class="card-title text-white fw-bold">Giraffe</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1628,8 +1725,8 @@
               <img src="/Images/Palm Tree Lensi Africa.jpg" class="card-img-top my-img-top27" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal27">
               <div class="my-gallery-card27">
-                <h5 class="card-title text-white">Palmtree</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1649,8 +1746,8 @@
               <img src="/Images/Students Lensi Africa.jpg" class="card-img-top my-img-top28" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal28">
               <div class="my-gallery-card" id="my-imgcard28">
-                <h5 class="card-title text-white">Pupils</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1670,8 +1767,8 @@
               <img src="/Images/Women Lensi Africa.jpg" class="card-img-top my-img-top29" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal29">
               <div class="my-gallery-card29">
-                <h5 class="card-title text-white">Women</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1691,8 +1788,8 @@
               <img src="/Images/Kids-Lensi Africa.jpg" class="card-img-top my-img-top30" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal30">
               <div class="my-gallery-card30">
-                <h5 class="card-title text-white">Kids</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1717,8 +1814,8 @@
               <img src="/Images/featured photo1.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal1">
               <div class="my-gallery-card" id="my-imgcard1">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1738,8 +1835,8 @@
               <img src="/Images/featured photo2.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal2">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1759,8 +1856,8 @@
               <img src="/Images/featured photo3.jpg" class="card-img-top my-img-top3" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal3">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Mother</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1780,8 +1877,8 @@
               <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal4">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1801,8 +1898,8 @@
               <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal5">
               <div class="my-gallery-card5">
-                <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1822,8 +1919,8 @@
               <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal6">
               <div class="my-gallery-card6">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1843,8 +1940,8 @@
               <img src="/Images/feature photo7.jpg" class="card-img-top7 my-img-top7" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal7">
               <div class="my-gallery-card" id="my-imgcard7">
-                <h5 class="card-title text-white">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1864,8 +1961,8 @@
               <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal8">
               <div class="my-gallery-card8">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1885,8 +1982,8 @@
               <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal9">
               <div class="my-gallery-card9">
-                <h5 class="card-title text-white fw-bold">Animals</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1906,8 +2003,8 @@
               <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal10">
               <div class="my-gallery-card" id="my-imgcard10">
-                <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1927,8 +2024,8 @@
               <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal11">
               <div class="my-gallery-card11">
-                <h5 class="card-title text-white fw-bold">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1948,8 +2045,8 @@
               <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal12">
               <div class="my-gallery-card12">
-                <h5 class="card-title text-white">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1969,8 +2066,8 @@
               <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal13">
               <div class="my-gallery-card" id="my-imgcard13">
-                <h5 class="card-title text-white">Woman</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -1990,8 +2087,8 @@
               <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal14">
               <div class="my-gallery-card14">
-                <h5 class="card-title text-white">Mother</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2011,8 +2108,8 @@
               <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal15">
               <div class="my-gallery-card15">
-                <h5 class="card-title text-white">Tradition</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2037,8 +2134,8 @@
               <img src="/Images/featured photo1.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal1">
               <div class="my-gallery-card" id="my-imgcard1">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2058,8 +2155,8 @@
               <img src="/Images/featured photo2.jpg" class="card-img-top" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal2">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2079,8 +2176,8 @@
               <img src="/Images/featured photo3.jpg" class="card-img-top my-img-top3" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal3">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Mother</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2100,8 +2197,8 @@
               <img src="/Images/featured photo4.jpg" class="card-img-top my-img-top4" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal4">
               <div class="my-gallery-card">
-                <h5 class="card-title text-white fw-bold">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2121,8 +2218,8 @@
               <img src="/Images/featured photo5.jpg" class="card-img-top my-img-top5" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal5">
               <div class="my-gallery-card5">
-                <h5 class="card-title text-white fw-bold">Fabrics</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2142,8 +2239,8 @@
               <img src="/Images/featured photo6.jpg" class="card-img-top my-img-top6" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal6">
               <div class="my-gallery-card6">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2163,8 +2260,8 @@
               <img src="/Images/feature photo7.jpg" class="card-img-top7 my-img-top7" alt="" data-bs-toggle="modal"
                 data-bs-target="#imageModal7">
               <div class="my-gallery-card" id="my-imgcard7">
-                <h5 class="card-title text-white">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2183,8 +2280,8 @@
             <div class="card border-0">
               <img src="/Images/feature photo8.jpg" class="card-img-top my-img-top8" alt="" data-bs-toggle="modal" data-bs-target="#imageModal8">
               <div class="my-gallery-card8">
-                <h5 class="card-title text-white fw-bold">People</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2203,8 +2300,8 @@
             <div class="card border-0">
               <img src="/Images/feature photo9.jpg" class="card-img-top my-img-top9" alt="" data-bs-toggle="modal" data-bs-target="#imageModal9">
               <div class="my-gallery-card9">
-                <h5 class="card-title text-white fw-bold">Animals</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2223,8 +2320,8 @@
             <div class="card border-0">
               <img src="/Images/feature photo10.jpg" class="card-img-top my-img-top10" alt="" data-bs-toggle="modal" data-bs-target="#imageModal10">
               <div class="my-gallery-card" id="my-imgcard10">
-                <h5 class="card-title text-white fw-bold">Elephants</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2243,8 +2340,8 @@
             <div class="card border-0">
               <img src="/Images/feature photo11.jpg" class="card-img-top my-img-top11" alt="" data-bs-toggle="modal" data-bs-target="#imageModal11">
               <div class="my-gallery-card11">
-                <h5 class="card-title text-white fw-bold">Children</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white fw-bold"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2263,8 +2360,8 @@
             <div class="card border-0">
               <img src="/Images/nature1.jpg" class="card-img-top my-img-top12" alt="" data-bs-toggle="modal" data-bs-target="#imageModal12">
               <div class="my-gallery-card12">
-                <h5 class="card-title text-white">Nature</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2283,8 +2380,8 @@
             <div class="card border-0">
               <img src="/Images/woman2.jpg" class="card-img-top my-img-top13" alt="" data-bs-toggle="modal" data-bs-target="#imageModal13">
               <div class="my-gallery-card" id="my-imgcard13">
-                <h5 class="card-title text-white">Woman</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2303,8 +2400,8 @@
             <div class="card border-0">
               <img src="/Images/woman tradition1.jpg" class="card-img-top my-img-top14" alt="" data-bs-toggle="modal" data-bs-target="#imageModal14">
               <div class="my-gallery-card14">
-                <h5 class="card-title text-white">Mother</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2323,8 +2420,8 @@
             <div class="card border-0">
               <img src="/Images/woman tradition.jpg" class="card-img-top my-img-top15" alt="" data-bs-toggle="modal" data-bs-target="#imageModal15">
               <div class="my-gallery-card15">
-                <h5 class="card-title text-white">Tradition</h5>
-                <button class="btn btn-sm btn btn-dark mt-2 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
+                <h5 class="card-title text-white"></h5>
+                <button class="btn btn-sm btn btn-dark mx-4 mt-4 w-100 protected" data-file=""><i class="bi bi-download"></i></button>
               </div>
             </div>
           
@@ -2343,11 +2440,11 @@
         </div>
       </div>
     </div>
-    <div class="text-center pt-5 mt-5">
+    <div class=" text-center pt-5 mt-5">
       <div id="my-buttons">                        <!--Previous and Next buttons-->
-      <button id="prevBtn" class="btn btn-success me-2" type="button" data-bs-target="#groupCarousel" data-bs-slide="prev">‹ Previous
+      <button id="prevBtn" class="btn btn-light text-success me-2" type="button" data-bs-target="#groupCarousel" data-bs-slide="prev">‹ Previous
       </button>
-      <button id="nextBtn" class="btn btn-success" type="button" data-bs-target="#groupCarousel" data-bs-slide="next">Next ›
+      <button id="nextBtn" class="btn btn-light text-success" type="button" data-bs-target="#groupCarousel" data-bs-slide="next">Next ›
       </button>
       </div>
     </div>
@@ -5771,7 +5868,7 @@
 
   <!-- Preview Uploaded Images -->
   <div id="previewContainer" class="mt-5">
-    <h5 class="text-white bg-success p-2 fs-5 fst-italic">Uploaded Photos:</h5>
+    <h5 class="text-success bg-light p-2 fs-5 fst-italic">Uploaded Photos:</h5>
     <div id="photoGallery" class="d-flex flex-wrap"></div>
   </div>
   </div>
@@ -5779,30 +5876,30 @@
 
 
 <!-- Footer Section -->
-<footer class="bg-black text-white pt-5 pb-4">
+<footer class="bg-light text-white pt-5 pb-4">
   <div class="container text-center text-md-start">
     <div class="row text-center text-md-start">
 
       <!-- About Section -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 fw-bold text-success">About PhotoNaija</h5>
-        <p class="text-white-50">Discover Naija through powerful imagery. From culture and nature to iconic    personalities, our gallery captures the vibrant spirit of the continent.</p>
+        <p class="text-success">Discover Naija through powerful imagery. From culture and nature to iconic personalities, our gallery captures the vibrant spirit of the continent.</p>
       </div>
 
       <!-- Quick Links -->
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 fw-bold text-success">Quick Links</h5>
-        <p><a href="#explore" class="text-white-50 text-decoration-none">Explore</a></p>
-        <p><a href="#more-categories" class="text-white-50 text-decoration-none">More Categories</a></p>
-        <p><a href="#about" class="text-white-50 text-decoration-none">About Us</a></p>
+        <p><a href="#explore" class="text-success text-decoration-none">Explore</a></p>
+        <p><a href="#more-categories" class="text-success text-decoration-none">More Categories</a></p>
+        <p><a href="#about" class="text-success text-decoration-none">About Us</a></p>
       </div>
 
       <!-- Contact -->
       <section id="contact-us" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 fw-bold text-success">Contact</h5>
-        <p class="text-white-50"><i class="bi bi-globe text-light"></i> Port Harcourt, Nigeria</p>
-        <p class="text-white-50"><i class="bi bi-envelope text-light"></i> support@africagallery.com</p>
-        <p class="text-white-50"><i class="bi bi-phone text-light"></i> +234 800 123 4567</p>
+        <p class="text-success"><i class="bi bi-globe text-success"></i> Port Harcourt, Nigeria</p>
+        <p class="text-success"><i class="bi bi-envelope text-success"></i> support@africagallery.com</p>
+        <p class="text-success"><i class="bi bi-phone text-success"></i> +234 800 123 4567</p>
       </section>
 
       <!-- Social Media -->
@@ -5810,16 +5907,16 @@
         <h5 class="text-uppercase mb-4 fw-bold text-success">Follow Us</h5>
         <a href="#" class="text-white me-4"><i class="bi bi-facebook"></i></a>
         <a href="#" class="text-white me-4"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="text-white me-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-danger me-4"><i class="bi bi-instagram"></i></a>
         <a href="#" class="text-white me-4"><i class="bi bi-youtube text-danger"></i></a>
       </div>
     </div>
 
     <!-- Copyright -->
-    <hr class="text-white fw-bold" />
+    <hr class="text-black fw-bold" />
     <div class="row mt-4">
       <div class="col-md-12 text-center">
-        <p class="text-white-50">Copyright © 2025 <i class="bi bi-camera">Naija</i>. All rights reserved.</p>
+        <p class="text-success">Copyright © 2025 <i class="bi bi-camera text-success">Naija</i>. All rights reserved.</p>
       </div>
     </div>
   </div>

@@ -160,6 +160,27 @@ body {
   }
 }
 
+/*naija dropdow*/
+.dropdown-menu {
+  border: none;
+}
+
+.drop-down {
+  animation: slideUpDown 2s infinite;
+  display: inline-block;
+  margin: 10px;
+}
+
+@keyframes slideUpDown {
+  0%,
+  50% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
 /*Explore Categories Section*/
 @media (max-width: 767.98px) {
   #explore {
@@ -779,6 +800,157 @@ body {
 @media (min-width: 1024px) {
   #Apostle-Selman28 {
     margin-top: -405px;
+  }
+}
+
+/*Pastor Jerry*/
+@media (min-width: 768px) {
+  #Pastor-Jerry4 {
+    margin-top: -48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry4 {
+    margin-top: -110px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry5 {
+    margin-top: -1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry5 {
+    margin-top: -8px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry7 {
+    margin-top: -130px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry7 {
+    margin-top: -249px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry9 {
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry9 {
+    margin-top: -32px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry10 {
+    margin-top: -178px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry10 {
+    margin-top: -328px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry12 {
+    margin-top: -103px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry12 {
+    margin-top: -191px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry13 {
+    margin-top: -135px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry13 {
+    margin-top: -253px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry15 {
+    margin-top: -151px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry15 {
+    margin-top: -273px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry16 {
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry16 {
+    margin-top: -279px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry18 {
+    margin-top: -99px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry18 {
+    margin-top: -188px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry19 {
+    margin-top: -140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry19 {
+    margin-top: -255px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry20 {
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Pastor-Jerry22 {
+    margin-top: -202px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #Pastor-Jerry22 {
+    margin-top: -371px;
   }
 }
 
