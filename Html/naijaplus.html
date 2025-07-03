@@ -17,6 +17,40 @@
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container justify-content-between align-items-center">
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav justify-content-center d-flex gap-2">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-black fw-normal"
+                href="/Html/blog.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-normal" href="">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-normal" href="">Community</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container py-5">
       <h2 class="text-center mb-4">Premium Photo Gallery</h2>
       <div class="row g-4 my-photo-card-button">
@@ -205,6 +239,15 @@
         </div>
       </div>
     </div>
+
+    <!--Back to Top-->
+    <a
+      href="#top"
+      id="backToTop"
+      class="btn btn-dark shadow rounded-circle position-fixed"
+      style="bottom: 20px; right: 20px; display: none; z-index: 9999"
+      ><i class="bi bi-chevron-up"></i
+    ></a>
 
     <!-- Paystack -->
     <script src="https://js.paystack.co/v1/inline.js"></script>

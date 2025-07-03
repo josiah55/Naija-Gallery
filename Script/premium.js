@@ -49,3 +49,14 @@ document.addEventListener("contextmenu", function (e) {
     e.preventDefault(); // disable right-click only on images
   }
 });
+
+//The back to top
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("backToTop");
+  btn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+document.getElementById("backToTop").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
