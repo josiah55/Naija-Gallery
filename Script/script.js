@@ -283,6 +283,13 @@ function removeImageFromStorage(dataURL) {
   localStorage.setItem("uploadedPhotos", JSON.stringify(stored));
 }
 
+// Allow right-click everywhere, except on images
+document.addEventListener("contextmenu", function (e) {
+  if (e.target.tagName === "IMG") {
+    e.preventDefault(); // disable right-click only on images
+  }
+});
+
 //The back to top
 window.addEventListener("scroll", function () {
   const btn = document.getElementById("backToTop");
