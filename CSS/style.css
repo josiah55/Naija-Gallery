@@ -11,23 +11,20 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* navbar active */
-#navbarNav .active {
-  color: #8818d7;
-}
-
+/* navbar photonaija */
 #navbarNav a {
   font-weight: bold;
   color: #000;
 }
 
-#navbarNav a:hover {
-  color: #8818d7;
-}
-
 .nav-link:hover {
   animation: bounce 0.3s ease;
   text-decoration: underline;
+}
+
+/*navbar & hero img */
+#top {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 @keyframes bounce {
@@ -44,7 +41,32 @@ body {
   }
 }
 
-/* photonaija card */
+@media (max-width: 912px) {
+  #loginBtn {
+    margin-top: 10px;
+  }
+
+  #customHamburger {
+    margin-top: 10px;
+  }
+}
+
+/* About photonaija animation*/
+@keyframes pulseGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 0 rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 1);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* photonaijavista card (35 img) */
 .card-title {
   font-size: 1.3rem;
   font-weight: 600;
@@ -61,7 +83,6 @@ body {
   border-top: 1px solid #ddd;
 }
 
-/* photonaija upload photo form*/
 .gallery-card img {
   height: 200px;
   object-fit: cover;
@@ -92,20 +113,20 @@ body {
 }
 
 /* Hero section for photonaija */
-.hero_video {
+.hero_photo {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
 @media (max-width: 767.98px) {
-  .hero_video {
+  .hero_photo {
     position: relative;
     height: 60vh;
   }
 }
 
-.hero_video video {
+.hero_photo img {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +136,7 @@ body {
   z-index: 1;
 }
 
-.hero_video::before {
+.hero_photo::before {
   content: "";
   position: absolute;
   top: 0;
@@ -150,17 +171,22 @@ body {
 }
 
 /*photonaijavista*/
+.container a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 767.98px) {
   #photonaijavista {
     margin-top: -100px;
   }
 
-  #drop-down {
-    margin-top: -70px;
+  #drop-down button {
+    margin-top: -100px;
   }
 }
 
-/*naija dropdow*/
+/*photonaija dropdow button*/
 .dropdown-menu {
   border: none;
 }
@@ -169,6 +195,12 @@ body {
   animation: slideUpDown 2s infinite;
   display: inline-block;
   margin: 10px;
+}
+
+@media (max-width: 767.98px) {
+  #drop_down button {
+    margin-top: -100px;
+  }
 }
 
 @keyframes slideUpDown {
@@ -182,17 +214,28 @@ body {
 }
 
 /*Explore Categories Section*/
+#explore-buttons {
+  margin-top: -40px;
+}
+
 @media (max-width: 767.98px) {
-  #explore {
-    margin-top: -100px;
+  #drop-down button {
+    margin-top: 2px;
   }
 }
-.Pastor {
+
+@media (max-width: 767.98px) {
+  #explore {
+    margin-top: -110px;
+  }
+}
+
+.imgs {
   width: 100px;
   border-radius: 5px;
 }
 
-/*modal imgs for categories section*/
+/*modal images for explore categories section*/
 @media (min-width: 768px) {
   #Daddy-Go-4 {
     margin-top: 2px;
@@ -954,7 +997,7 @@ body {
   }
 }
 
-/*photonaijavista*/
+/*photonaijavista
 .card .card-img-top {
   max-width: 500px;
 }
@@ -972,6 +1015,7 @@ body {
 .gallery-item img:hover {
   transform: scale(1.03);
 }
+  */
 
 /*Cards Gallery Featured Photos download buttons*/
 .my-gallery-card {
@@ -3369,6 +3413,141 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  #my-imgcard31 {
+    position: absolute;
+    top: 478px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard32 {
+    position: absolute;
+    top: 163px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard33 {
+    position: absolute;
+    top: 477px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard34 {
+    position: absolute;
+    top: 290px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard35 {
+    position: absolute;
+    top: 165px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard36 {
+    position: absolute;
+    top: 170px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard37 {
+    position: absolute;
+    top: 123px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard38 {
+    position: absolute;
+    top: 290px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard39 {
+    position: absolute;
+    top: 160px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard40 {
+    position: absolute;
+    top: 163px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard41 {
+    position: absolute;
+    top: 166px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard42 {
+    position: absolute;
+    top: 164px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard43 {
+    position: absolute;
+    top: 479px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard44 {
+    position: absolute;
+    top: 197px;
+    right: auto;
+    left: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #my-imgcard45 {
+    position: absolute;
+    top: 162px;
+    right: auto;
+    left: 20%;
+  }
+}
+
 /*Cards Gallery Featured Photos*/
 .my-img-top {
   position: absolute;
@@ -3989,25 +4168,38 @@ body {
   margin-top: -5vh;
 }
 
+@media (max-width: 390px) {
+  #my-buttons {
+  }
+}
+
 @media (max-width: 767.98px) {
   #my-buttons {
-    margin-top: -10vh;
+    margin-top: -55px;
   }
 }
 
-/*more categories*/
+/*more categories
 @media (max-width: 767.98px) {
   #more-categories {
-    margin-top: -70px;
+    margin-top: -60px;
   }
 }
+  */
 
-/*the large img when clicked on the card img*/
+/*the large img when clicked on the card img
 .img-fluid {
   width: 600px;
 }
+*/
 
-/* More Categories*/
+/* More Categories button*/
+@media (max-width: 767.98px) {
+  #more-categories {
+    margin-top: -60px;
+  }
+}
+
 .ICON {
   width: 30px;
 }
@@ -4035,7 +4227,7 @@ body {
 
 @media (max-width: 767.98px) {
   #my_container {
-    margin-top: -100px;
+    margin-top: -50px;
   }
 }
 
@@ -4057,7 +4249,7 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-/* footer for photonaija */
+/* footer icons for photonaija */
 #footer-icons .bi-github {
   color: #181717;
 }
@@ -4076,8 +4268,15 @@ h2 {
 
 /* naija blog */
 .hero h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bolder;
+}
+
+/*blog hero sec*/
+@media (max-width: 767.98px) {
+  #blog_ {
+    margin-top: -30px;
+  }
 }
 
 /* Featured (blog) */
@@ -4136,7 +4335,7 @@ h2 {
       url("/Images/1.jpg");
     max-width: 100%;
     text-align: center;
-    height: 60vh;
+    height: 50vh;
     color: #fff;
     flex-direction: column;
     display: flex;
@@ -4228,13 +4427,6 @@ h2 {
   }
 }
 
-/*blog*/
-@media (max-width: 767.98px) {
-  #blog_ {
-    margin-top: -70px;
-  }
-}
-
 /* heire me (profile) */
 .hireme-background {
   background: #000;
@@ -4246,7 +4438,7 @@ h2 {
   }
 }
 
-/*naijaplus*/
+/*photonaijaplus*/
 img {
   user-select: none;
   -webkit-user-drag: none;
@@ -4269,5 +4461,67 @@ img {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
+  font-weight: bold;
+}
+
+/* More categories */
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-hover:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.download-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: none;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover .download-btn {
+  display: block;
+}
+
+.category-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.filter-btn {
+  margin: 0.25rem;
+}
+
+@media (max-width: 767.98px) {
+  #loginBtn {
+    margin-bottom: 10px;
+  }
+}
+
+/*remove border from modal*/
+.modal-content {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#backToTop {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 0;
   font-weight: bold;
 }

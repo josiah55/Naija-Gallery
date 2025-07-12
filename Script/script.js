@@ -1,4 +1,4 @@
-//Login for photos
+//Login/signup to access photos
 let isSignup = false;
 
 // Toggle Login/Signup mode
@@ -116,7 +116,6 @@ document.getElementById("searchForm").addEventListener("submit", function (e) {
   document.getElementById("searchInput").value = "";
 });
 
-//search bar for photos on the photonaijavista
 const searchInput = document.getElementById("searchInput");
 const itemList = document.getElementById("explore");
 const items = itemList.getElementsByTagName("button");
@@ -134,26 +133,25 @@ searchInput.addEventListener("keyup", function () {
   }
 });
 
+//navbar scrroll
+const navbar = document.getElementById("top");
+const hero = document.getElementById("heroSection");
+
+window.addEventListener("scroll", () => {
+  const heroBottom = hero.offsetHeight;
+
+  if (window.scrollY > heroBottom - 50) {
+    navbar.style.display = "none";
+  } else {
+    navbar.style.display = "flex"; // or 'block' if using standard nav
+  }
+});
+
 //Carousel for next and previous page
 const carouselElement = document.getElementById("groupCarousel");
 const carouselWrapper = document.getElementById("myCarouselWrapper");
 carouselElement.addEventListener("slid.bs.carousel", function () {
   carouselWrapper.scrollIntoView({ behavior: "smooth" });
-});
-
-//More Categories
-function toggleGallery(id) {
-  const gallery = document.getElementById(id);
-  gallery.classList.toggle("d-none");
-}
-
-//Modal for more categories
-document.querySelectorAll('img[data-bs-toggle="modal"]').forEach((img) => {
-  img.addEventListener("click", function () {
-    const src = this.getAttribute("src");
-    document.getElementById("modalImage").src = src;
-    document.querySelector("#imageModal a").href = src;
-  });
 });
 
 // This is for the uploaded photos
@@ -283,7 +281,7 @@ function removeImageFromStorage(dataURL) {
   localStorage.setItem("uploadedPhotos", JSON.stringify(stored));
 }
 
-// Allow right-click everywhere, except on images
+//Allow right-click everywhere, except on images
 document.addEventListener("contextmenu", function (e) {
   if (e.target.tagName === "IMG") {
     e.preventDefault(); // disable right-click only on images

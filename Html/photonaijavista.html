@@ -18,57 +18,98 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="/Html/Africa.html"></a>
+    <nav class="navbar navbar-expand-lg navbar-light border rounded">
+      <div class="container-fluid">
         <button
           class="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="#navbarNavDropdown"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mt-3">
-            <li class="nav-item">
-              <a
-                class="nav-link text-light text-decoration-none no-underline-hover"
-                href="/index.html"
-                >🏠 Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light text-decoration-none no-underline-hover"
-                href="#Contact_Us"
-                >📞 Contact-Us</a
-              >
-            </li>
-          </ul>
-        </div>
+        <a class="text-decoration-none mx-5 fs-5" href="/index.html"
+          ><span class="fst-italic fw-bold text-black"
+            >Photonaija<i class="bi bi-camera text-success"></i></span
+        ></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          
+
+          <!--login/signup button-->
+          <button
+            class="btn btn-dark text-light ms-auto"
+            id="loginBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            🔐Login/Signup
+          </button>
       </div>
     </nav>
 
-    <!--Afrovista-->
-    <section class="container mt-5 pt-5" id="">
-      <div>
-        <i class="bi bi-camera fs-1 fw-bold text-success"
-          ><span>Naijavista</span></i
-        >
+    <!--login/sgnup popup box-->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="authForm">
+              <div class="mb-3">
+                <label>Email address</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label>Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3 d-none" id="nameField">
+                <label>Full Name</label>
+                <input type="text" id="fullName" class="form-control" />
+              </div>
+              <button type="submit" class="btn btn-primary w-100" id="authBtn">
+                Login
+              </button>
+            </form>
+            <hr />
+            <p class="text-center" id="toggleText">
+              Don't have an account? <a href="#" id="toggleAuth">Signup here</a>
+            </p>
+          </div>
+        </div>
       </div>
-      <p class="text-muted mt-5">35 Images</p>
+    </div>
+
+    <!--photonaijavista-->
+    <section class="container mt-5 pt-5 mb-5" id="">
+      <div>
+        <span class="fs-2 fst-italic fw-bold"
+          >Photonaijavista<i class="bi bi-camera fs-2 fw-bold text-success"></i
+        ></span>
+      </div>
+      <p class="text-muted mt-3">35 Images</p>
       <div class="row">
         <div class="col-sm-4">
           <div class="card gallery-card">
             <img
-              src="https://via.placeholder.com/400x200"
+              src="/Images/1.jpg"
               class="card-img-top"
               alt=""
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="/Images/1.jpg" download class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -81,7 +122,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -94,7 +135,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -107,7 +148,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -120,7 +161,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -133,7 +174,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -146,7 +187,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -159,7 +200,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -172,7 +213,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -185,7 +226,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -198,7 +239,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -211,7 +252,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -224,7 +265,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -237,7 +278,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -250,7 +291,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -263,7 +304,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -276,7 +317,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -289,7 +330,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -302,7 +343,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -315,7 +356,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -328,7 +369,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-dark">Download</a>
+              <a href="#" class="btn btn-dark protected">Download</a>
             </div>
           </div>
         </div>
@@ -341,7 +382,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -354,7 +395,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -367,7 +408,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -380,7 +421,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -393,7 +434,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -406,7 +447,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -419,7 +460,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -432,7 +473,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -445,7 +486,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -458,7 +499,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -471,7 +512,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -484,7 +525,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -497,7 +538,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -510,7 +551,7 @@
             />
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <a href="#" class="btn btn-success">Download</a>
+              <a href="#" class="btn btn-success protected">Download</a>
             </div>
           </div>
         </div>
@@ -518,34 +559,40 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
-      <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
-          <!-- About -->
+    <footer class="bg-light text-white pb-4">
+      <div class="container">
+        <div class="row text-md-left">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 fw-bold text-success">
-              About Gallery
+            <h5 class="mb-4 fw-bold text-success">
+              ABOUT
+              <span class="fst-italic fw-bold text-black"
+                >Photonaija<i class="bi bi-camera text-success"></i
+              ></span>
             </h5>
-            <p>
-              Discover Africa through powerful imagery. From culture and nature
+            <p class="text-success">
+              Discover Naija through powerful imagery. From culture and nature
               to iconic personalities, our gallery captures the vibrant spirit
               of the continent.
             </p>
           </div>
 
-          <!-- Quick Links 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3"></div>
-                -->
-
           <!-- Contact -->
-          <div id="Contact_Us" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <section
+            id="contact-us"
+            class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"
+          >
             <h5 class="text-uppercase mb-4 fw-bold text-success">Contact</h5>
-            <p><i class="bi bi-globe text-white"></i> Lagos, Nigeria</p>
-            <p>
-              <i class="bi bi-envelope text-light"></i> support@lensiafrica.com
+            <p class="text-success">
+              <i class="bi bi-globe text-success"></i> Port Harcourt, Nigeria
             </p>
-            <p><i class="bi bi-phone text-light"></i> +234 800 123 4567</p>
-          </div>
+            <p class="text-success">
+              <i class="bi bi-envelope text-success"></i>
+              support@africagallery.com
+            </p>
+            <p class="text-success">
+              <i class="bi bi-phone text-success"></i> +234 800 123 4567
+            </p>
+          </section>
 
           <!-- Social Media -->
           <div
@@ -559,7 +606,7 @@
             <a href="#" class="text-white me-4"
               ><i class="bi bi-twitter"></i
             ></a>
-            <a href="#" class="text-white me-4"
+            <a href="#" class="text-danger me-4"
               ><i class="bi bi-instagram"></i
             ></a>
             <a href="#" class="text-white me-4"
@@ -569,10 +616,14 @@
         </div>
 
         <!-- Copyright -->
+        <hr class="text-black fw-bold" />
         <div class="row mt-4">
           <div class="col-md-12 text-center">
-            <p class="text-white-50">
-              © 2025 Africa Photo Gallery. All rights reserved.
+            <p class="text-success">
+              Copyright © 2025
+              <span class="fst-italic fw-bold text-black"
+                >Photonaija<i class="bi bi-camera text-success"></i></span
+              >. All rights reserved.
             </p>
           </div>
         </div>
@@ -584,6 +635,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="/Script/script.js"></script>
+    <script src="/Script/vista.js"></script>
   </body>
 </html>

@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoNaija</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light border rounded">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="text-decoration-none mx-5 fs-5" href="/index.html"
+          ><span class="fst-italic fw-bold text-black"
+            >Photonaija<i class="bi bi-camera text-success"></i></span
+        ></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >More Categories</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#landscape">🌿 Nature</a>
+                </li>
+                <li><a class="dropdown-item" href="#culture">🎭 Culture</a></li>
+                <li><a class="dropdown-item" href="#people">🏙️ People</a></li>
+                <li><a class="dropdown-item" href="#event">🏙️ Event</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!--login/signup button-->
+          <button
+            class="btn btn-dark text-light mx-1"
+            id="loginBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            🔐Login/Signup
+          </button>
+
+          <!--search bar-->
+          <form class="d-flex border rounded">
+            <input
+              id="gallerySearchInput"
+              class="form-control"
+              type="search"
+              placeholder="Search..."
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--login/sgnup popup box-->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="authForm">
+              <div class="mb-3">
+                <label>Email address</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label>Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3 d-none" id="nameField">
+                <label>Full Name</label>
+                <input type="text" id="fullName" class="form-control" />
+              </div>
+              <button type="submit" class="btn btn-primary w-100" id="authBtn">
+                Login
+              </button>
+            </form>
+            <hr />
+            <p class="text-center" id="toggleText">
+              Don't have an account? <a href="#" id="toggleAuth">Signup here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Tags -->
+    <div class="container my-4 text-center" id="buttons_">
+      <button class="btn btn-outline-success filter-btn" data-tag="all">
+        All
+      </button>
+
+      <button
+        id="igbo"
+        class="btn btn-outline-success filter-btn"
+        data-tag="igbo"
+      >
+        Igbo
+      </button>
+
+      <button class="btn btn-outline-success filter-btn" data-tag="yoruba">
+        Yoruba
+      </button>
+
+      <button class="btn btn-outline-success filter-btn" data-tag="hausa">
+        Hausa
+      </button>
+
+      <button class="btn btn-outline-success filter-btn" data-tag="culture">
+        Culture
+      </button>
+
+      <button class="btn btn-outline-success filter-btn" data-tag="river">
+        Nature
+      </button>
+
+      <button class="btn btn-outline-success filter-btn" data-tag="humans">
+        People
+      </button>
+
+      <button class="btn btn-outline-success filter-btn" data-tag="ceremony">
+        Event
+      </button>
+    </div>
+
+    <div class="container" id="more_categories">
+      <!-- NATURE -->
+      <h3 id="nature" class="category-title">🌄 Nature</h3>
+      <div class="row g-4">
+        <div class="col-md-4 gallery-item" data-tags="nature river">
+          <div class="img-container">
+            <img
+              src="/Images/1.jpg"
+              data-full="/Images/1.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              style="
+                cursor: pointer;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+              "
+              alt="River"
+            />
+            <a
+              href="https://source.unsplash.com/1200x800/?nigeria,river"
+              download
+              class="btn btn-sm btn-light download-btn"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Nigerian River</p>
+        </div>
+      </div>
+
+      <!-- CULTURE -->
+      <!--IGBO-->
+      <h3 id="culture" class="category-title">🧭 Culture</h3>
+      <div class="row g-4">
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Igbo cultue.png"
+              data-full="/Images/Culture/Igbo cultue.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Igbo cultue.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Igbo Traditional Attire</p>
+        </div>
+
+        <!--2-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/igbo attire1.png"
+              data-full="/Images/Culture/igbo attire1.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/igbo attire1.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Igbo Traditional Attire</p>
+        </div>
+
+        <!--3-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Bride-and-Groom-Wedding-Cake-Nigerian-Wedding-Tradition.jpg"
+              data-full="/Images/Culture/Bride-and-Groom-Wedding-Cake-Nigerian-Wedding-Tradition.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Bride-and-Groom-Wedding-Cake-Nigerian-Wedding-Tradition.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Traditional Wedding Cake</p>
+        </div>
+
+        <!--4-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Bride-Traditional-Igbo-Wedding-Dress.jpg"
+              data-full="/Images/Culture/Bride-Traditional-Igbo-Wedding-Dress.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Bride-Traditional-Igbo-Wedding-Dress.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Bride's Traditional Wedding Dress</p>
+        </div>
+
+        <!--5-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg"
+              data-full="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/The-Traditional-Igbo-Accessories-of-the-Bride-Coral-Beads.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">
+            Traditional Igbo Accessories Of The Bride
+          </p>
+        </div>
+
+        <!--6-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Tradtional Igbo Engagement.jpg"
+              data-full="/Images/Culture/Tradtional Igbo Engagement.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Tradtional Igbo Engagement.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Traditional Igbo Engagement Party</p>
+        </div>
+
+        <!--7-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Grooms cane.jpg"
+              data-full="/Images/Culture/Grooms cane.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Grooms cane.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Grooms Cane</p>
+        </div>
+
+        <!--8-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Igbo masqurede.jpg"
+              data-full="/Images/Culture/Igbo masqurede.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Igbo masqurede.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Traditional Masqurade</p>
+        </div>
+
+        <!--9-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/igbo wedding.jpg"
+              data-full="/Images/Culture/igbo wedding.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/igbo wedding.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Igbo Traditional Attire</p>
+        </div>
+
+        <!--10-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Igbo culture3.png"
+              data-full="/Images/Culture/Igbo culture3.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Igbo culture3.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Igbo Culture</p>
+        </div>
+
+        <!--11-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/culture.avif"
+              data-full="/Images/Culture/culture.avif"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/culture.avif"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Cultural Dance</p>
+        </div>
+
+        <!--12-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Igbo culture4.jpg"
+              data-full="/Images/Culture/Igbo culture4.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Igbo culture4.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Traditional Igbo Attire</p>
+        </div>
+
+        <!--13-->
+        <div class="col-md-4 gallery-item" data-tags="culture igbo">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Igbo culture5.jpg"
+              data-full="/Images/Culture/Igbo culture5.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Culture/Igbo culture5.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Traditional Igbo Wedding Ceremony</p>
+        </div>
+
+        <!--YORUBA-->
+        <!--1-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Yoruba1.png"
+              data-full="/Images/Culture/Yoruba1.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/Yoruba1.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--2-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/culture1.png"
+              data-full="/Images/Culture/culture1.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/culture1.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Traditional Dance</p>
+        </div>
+
+        <!--3-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/festivals1.jpg"
+              data-full="/Images/Culture/festivals1.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/festivals1.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Traditional Attire</p>
+        </div>
+
+        <!--4-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Yoruba Nigerian couples.png"
+              data-full="/Images/Culture/Yoruba Nigerian couples.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/Yoruba Nigerian couples.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--5-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/yoruba attire1.png"
+              data-full="/Images/Culture/yoruba attire1.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/yoruba attire1.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--6-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src=""
+              data-full=""
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href=""
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--7-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src=""
+              data-full=""
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href=""
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--8-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src=""
+              data-full=""
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href=""
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--9-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src=""
+              data-full=""
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href=""
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--10-->
+        <div class="col-md-4 gallery-item" data-tags="culture yoruba">
+          <div class="img-container">
+            <img
+              src=""
+              data-full=""
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href=""
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Yoruba Attire</p>
+        </div>
+
+        <!--HAUSA-->
+        <!--1-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Hausa traditional dance.jpg"
+              data-full="/Images/Culture/Hausa traditional dance.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/Hausa traditional dance.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Cultural Dance</p>
+        </div>
+
+        <!--2-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/hausa lady.jpg"
+              data-full="/Images/Culture/hausa lady.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/hausa lady.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Lady</p>
+        </div>
+
+        <!--3-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/hausa woman.jpg"
+              data-full="/Images/Culture/hausa woman.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/hausa woman.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Woman</p>
+        </div>
+
+        <!--4-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/hausa ladies.jpg"
+              data-full="/Images/Culture/hausa ladies.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/hausa ladies.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Women</p>
+        </div>
+
+        <!--5-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/hausa4.jpg"
+              data-full="/Images/Culture/hausa4.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/hausa4.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Constume</p>
+        </div>
+
+        <!--6-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/Hausa1.jpeg"
+              data-full="/Images/Culture/Hausa1.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/Hausa1.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Attire</p>
+        </div>
+
+        <!--7-->
+        <div class="col-md-4 gallery-item" data-tags="culture hausa">
+          <div class="img-container">
+            <img
+              src="/Images/Culture/rulers.jpg"
+              data-full="/Images/Culture/rulers.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Yoruba Dress"
+            />
+            <a
+              href="/Images/Culture/rulers.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hausa Traditional Rulers</p>
+        </div>
+      </div>
+
+      <!-- PEOPLE -->
+      <h3 id="people" class="category-title">👤 People</h3>
+      <div class="row g-4">
+        <!--1-->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img
+              src="/Images/People/woman.jpg"
+              data-full="/Images/People/woman.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/People/woman.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Lady</p>
+        </div>
+
+        <!--2-->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img
+              src="/Images/People/woman-8316237_1280.jpg"
+              data-full="/Images/People/woman-8316237_1280.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/People/woman-8316237_1280.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Lady</p>
+        </div>
+
+        <!--3-->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img
+              src="/Images/People/people2.jpg"
+              data-full="/Images/People/people2.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/People/people2.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Teens</p>
+        </div>
+
+        <!--4-->
+        <div class="col-md-4 gallery-item" data-tags="people humans">
+          <div class="img-container">
+            <img
+              src="/Images/People/girl child.png"
+              data-full="/Images/People/girl child.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/People/girl child.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Girl child</p>
+        </div>
+      </div>
+
+      <!-- EVENT -->
+      <h3 id="event" class="category-title">🎉 Event</h3>
+      <div class="row g-4">
+        <!--1-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/party scene.png"
+              data-full="/Images/Events/party scene.png"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/party scene.png"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Party scene</p>
+        </div>
+
+        <!--2-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/outdoor decor.jpeg"
+              data-full="/Images/Events/outdoor decor.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/outdoor decor.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Outdoor decor</p>
+        </div>
+
+        <!--3-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/garden-decor-.jpeg"
+              data-full="/Images/Events/garden-decor-.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/garden-decor-.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Garden decor</p>
+        </div>
+
+        <!--4-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/event-in-niigeria-make-money.jpg"
+              data-full="/Images/Events/event-in-niigeria-make-money.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/event-in-niigeria-make-money.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Event</p>
+        </div>
+
+        <!--5-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/event decor_1.jpeg"
+              data-full="/Images/Events/event decor_1.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/event decor_1.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Party Decor</p>
+        </div>
+
+        <!--6-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/event decor.jpg"
+              data-full="/Images/Events/event decor.jpg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/event decor.jpg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Event decor</p>
+        </div>
+
+        <!--7-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/event colorful decor.jpeg"
+              data-full="/Images/Events/event colorful decor.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/event colorful decor.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Colorful decor</p>
+        </div>
+
+        <!--8-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/event center.jpeg"
+              data-full="/Images/Events/event center.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/event center.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Hall</p>
+        </div>
+
+        <!--9-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/decor.jpeg"
+              data-full="/Images/Events/decor.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/decor.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Decor</p>
+        </div>
+
+        <!--10-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/bride & groom seat decor.jpeg"
+              data-full="/Images/Events/bride & groom seat decor.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/bride & groom seat decor.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Stage decor</p>
+        </div>
+
+        <!--11-->
+        <div class="col-md-4 gallery-item" data-tags="event ceremony">
+          <div class="img-container">
+            <img
+              src="/Images/Events/beautiful decor.jpeg"
+              data-full="/Images/Events/beautiful decor.jpeg"
+              class="img-fluid gallery-img img-hover w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              alt="Igbo Festival"
+            />
+            <a
+              href="/Images/Events/beautiful decor.jpeg"
+              download
+              class="btn btn-sm btn-success download-btn protected"
+              >Download</a
+            >
+          </div>
+          <p class="text-center mt-2">Beautiful event decor</p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      data-bs-backdrop="true"
+      data-bs-keyboard="true"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent">
+          <div class="modal-body text-center">
+            <img
+              id="modalImage"
+              src=""
+              class="img-fluid rounded"
+              alt="Selected Image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-light mt-5 pb-4">
+      <div class="container">
+        <div class="row text-md-left">
+          <!-- About Section -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 fw-bold text-success">
+              ABOUT
+              <span class="fst-italic fw-bold text-black"
+                >Photonaija<i class="bi bi-camera text-success"></i
+              ></span>
+            </h5>
+            <p class="text-success">
+              Discover Naija through powerful imagery. From culture and nature
+              to iconic personalities, our gallery captures the vibrant spirit
+              of the continent.
+            </p>
+          </div>
+
+          <!-- Contact -->
+          <section
+            id="contact-us"
+            class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"
+          >
+            <h5 class="text-uppercase mb-4 fw-bold text-success">Contact</h5>
+            <p class="text-success">
+              <i class="bi bi-globe text-success"></i> Port Harcourt, Nigeria
+            </p>
+            <p class="text-success">
+              <i class="bi bi-envelope text-success"></i>
+              support@africagallery.com
+            </p>
+            <p class="text-success">
+              <i class="bi bi-phone text-success"></i> +234 800 123 4567
+            </p>
+          </section>
+
+          <!-- Social Media -->
+          <div
+            class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3"
+            id="footer-icons"
+          >
+            <h5 class="text-uppercase mb-4 fw-bold text-success">Follow Us</h5>
+            <a href="#" class="text-white me-4"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" class="text-danger me-4"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-white me-4"
+              ><i class="bi bi-youtube text-danger"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <hr class="text-black fw-bold" />
+        <div class="row mt-4">
+          <div class="col-md-12 text-center">
+            <p class="text-success">
+              Copyright © 2025
+              <span class="fst-italic fw-bold text-black"
+                >Photonaija<i class="bi bi-camera text-success"></i></span
+              >. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="btn btn-dark position-fixed"
+      style="bottom: 20px; right: 20px; display: none; z-index: 1000"
+    >
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Script/more-categories.js"></script>
+  </body>
+</html>
