@@ -97,40 +97,98 @@ closePopup.addEventListener("click", () => {
 });
 
 //search-bar photos on photonaija
-document.getElementById("searchForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+// document.getElementById("searchForm").addEventListener("submit", function (e) {
+//   e.preventDefault();
 
-  const input = document
-    .getElementById("searchInput")
-    .value.trim()
-    .toLowerCase();
-  const target = document.getElementById(input);
+//   const input = document
+//     .getElementById("searchInput")
+//     .value.trim()
+//     .toLowerCase();
+//   const target = document.getElementById(input);
 
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  } else {
-    alert("No matching section found.");
-  }
+//   if (target) {
+//     target.scrollIntoView({ behavior: "smooth" });
+//   } else {
+//     alert("No matching section found.");
+//   }
 
-  // Optional: clear search input
-  document.getElementById("searchInput").value = "";
+//   // Optional: clear search input
+//   document.getElementById("searchInput").value = "";
+// });
+
+// const searchInput = document.getElementById("searchInput");
+// const itemList = document.getElementById("explore");
+// const items = itemList.getElementsByTagName("button");
+
+// searchInput.addEventListener("keyup", function () {
+//   const filter = searchInput.value.toLowerCase();
+
+//   for (let i = 0; i < items.length; i++) {
+//     const text = items[i].textContent.toLowerCase();
+//     if (text.includes(filter)) {
+//       items[i].style.display = "";
+//     } else {
+//       items[i].style.display = "none";
+//     }
+//   }
+// });
+
+// === Modal Image Preview ===
+const galleryImages = document.querySelectorAll(".gallery-img");
+const modalImage = document.getElementById("modalImage");
+
+galleryImages.forEach((img) => {
+  img.addEventListener("click", () => {
+    const fullImageUrl = img.getAttribute("data-full");
+    modalImage.src = fullImageUrl;
+  });
 });
 
-const searchInput = document.getElementById("searchInput");
-const itemList = document.getElementById("explore");
-const items = itemList.getElementsByTagName("button");
+//search bar
+const gallerySearchInput = document.getElementById("gallerySearchInput");
+const gallerySearchBtn = document.getElementById("gallerySearchBtn");
+const galleryItems = document.querySelectorAll(".gallery-item");
+const gallerySection = document.getElementById("gallerySection");
+const noResultsMessage = document.getElementById("noResultsMessage");
 
-searchInput.addEventListener("keyup", function () {
-  const filter = searchInput.value.toLowerCase();
+function filterGallery() {
+  const searchValue = gallerySearchInput.value.toLowerCase();
+  let matchFound = false;
 
-  for (let i = 0; i < items.length; i++) {
-    const text = items[i].textContent.toLowerCase();
-    if (text.includes(filter)) {
-      items[i].style.display = "";
-    } else {
-      items[i].style.display = "none";
-    }
+  galleryItems.forEach((item) => {
+    const tags = item.getAttribute("data-tags").toLowerCase();
+    const isMatch = tags.includes(searchValue);
+    item.style.display = isMatch ? "block" : "none";
+    if (isMatch) matchFound = true;
+  });
+
+  if (!matchFound) {
+    noResultsMessage.style.display = "block";
+  } else {
+    noResultsMessage.style.display = "none";
+    gallerySection.scrollIntoView({ behavior: "smooth" });
   }
+}
+
+// Only search when button is clicked
+gallerySearchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  filterGallery();
+});
+
+
+
+
+// Tag filter
+document.querySelectorAll(".filter-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const tag = btn.getAttribute("data-tag").toLowerCase();
+    galleryItems.forEach((item) => {
+      const itemTags = item.getAttribute("data-tags").toLowerCase();
+      item.style.display =
+        tag === "all" || itemTags.includes(tag) ? "block" : "none";
+    });
+  });
 });
 
 //navbar scrroll
