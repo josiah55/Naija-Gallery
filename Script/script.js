@@ -176,8 +176,13 @@ gallerySearchBtn.addEventListener("click", (e) => {
   filterGallery();
 });
 
-
-
+// 🔑 Search also when Enter key is pressed
+gallerySearchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    filterGallery();
+  }
+});
 
 // Tag filter
 document.querySelectorAll(".filter-btn").forEach((btn) => {
